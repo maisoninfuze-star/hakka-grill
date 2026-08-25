@@ -30,14 +30,19 @@ export default function Img({ slug, alt, sizes, className, priority, position, f
 
   const { widths, w, h, blur } = meta;
   const srcset = (ext: string) => widths.map((n) => `/img/${slug}-${n}.${ext} ${n}w`).join(', ');
-  const fallback = widths[0];
+  // widths is sorted descending, so widths[0] is the LARGEST. Using it as the
+  // bare src meant any path that ignores srcset pulled the biggest file on the
+  // page. The img now carries its own responsive WebP srcset, and src is only
+  // the last-resort fallback, so it takes the middle width.
+  const fallback = widths[Math.min(1, widths.length - 1)];
 
   return (
     <picture data-fill={fill ? '' : undefined}>
       <source type="image/avif" srcSet={srcset('avif')} sizes={sizes} />
-      <source type="image/webp" srcSet={srcset('webp')} sizes={sizes} />
       <img
         src={`/img/${slug}-${fallback}.webp`}
+        srcSet={srcset('webp')}
+        sizes={sizes}
         alt={alt}
         width={w}
         height={h}

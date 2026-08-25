@@ -108,7 +108,10 @@ export default function Header({ locale }: { locale: Locale }) {
       <div id="mnav" ref={panelRef} className={`mnav ${open ? 'is-open' : ''}`} hidden={!open}>
         <div className="mnav__act">
           <a href={SITE.orderUrl} className="btn btn--ember btn--wide" target="_blank" rel="noopener noreferrer">{t.nav.order}</a>
-          <a href={`tel:${SITE.phone}`} className="btn btn--ghost btn--wide">{t.nav.reserve}</a>
+          {/* --outline, not --ghost: in the panel this is a primary conversion
+              action shown at full width, so it gets the same visible edge as
+              the hero. --ghost stays for the compact desktop nav item. */}
+          <a href={`tel:${SITE.phone}`} className="btn btn--outline btn--wide">{t.nav.reserve}</a>
         </div>
         <nav aria-label={locale === 'en' ? 'Mobile' : 'Mobile'}>
           {links.map((l, i) => (

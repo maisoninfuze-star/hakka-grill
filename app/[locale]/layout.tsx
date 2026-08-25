@@ -40,6 +40,11 @@ export const icons = {
 export const viewport: Viewport = {
   themeColor: '#0A0C0F',
   colorScheme: 'dark',
+  // Required for env(safe-area-inset-*) to report anything but 0 on iPhone.
+  // Without it the sticky order bar sits under the home indicator. Because
+  // this also lets content run under the notch, site.css pads the gutter with
+  // the left/right insets so nothing is lost in landscape.
+  viewportFit: 'cover',
 };
 
 type Params = { params: Promise<{ locale: string }> };

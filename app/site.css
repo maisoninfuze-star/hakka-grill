@@ -153,7 +153,8 @@ picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
   border-bottom-color: var(--rule-soft);
 }
 .hdr__in {
-  max-width: var(--maxw); margin-inline: auto; padding: 1.15rem var(--gut);
+  max-width: var(--maxw); margin-inline: auto;
+  padding: 1.15rem max(var(--gut), env(safe-area-inset-left)) 1.15rem max(var(--gut), env(safe-area-inset-right));
   display: flex; align-items: center; gap: 1.5rem;
   transition: padding var(--d-med) var(--e-out);
 }
@@ -181,7 +182,14 @@ picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
 }
 .hdr__lang:hover, .hdr__lang:focus-visible { color: var(--bone); border-color: color-mix(in oklab, var(--bone) 34%, transparent); }
 
-.hdr__burger { display: none; background: none; border: 0; padding: 0.5rem; cursor: pointer; }
+/* .mnav is a child of .hdr, so the header's z-index never competes with the
+   panel's — inside the header's own stacking context the panel (99) paints
+   over an auto-index burger and the menu becomes impossible to close. The
+   burger needs its own index above the panel, and a position for it to apply. */
+.hdr__burger {
+  display: none; background: none; border: 0; padding: 0.5rem; cursor: pointer;
+  position: relative; z-index: 101;
+}
 .burger { display: block; width: 26px; height: 12px; position: relative; }
 .burger i {
   position: absolute; left: 0; height: 1.5px; width: 100%; background: var(--bone);
@@ -195,7 +203,10 @@ picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
 /* mobile panel */
 .mnav {
   position: fixed; inset: 0; z-index: 99;
-  background: var(--ink); padding: 6.5rem var(--gut) 2rem;
+  background: var(--ink);
+  padding: calc(6.5rem + env(safe-area-inset-top)) max(var(--gut), env(safe-area-inset-right))
+           calc(2rem + env(safe-area-inset-bottom)) max(var(--gut), env(safe-area-inset-left));
+  overflow-y: auto; overscroll-behavior: contain;
   display: flex; flex-direction: column; gap: 2rem;
   opacity: 0; pointer-events: none;
   transition: opacity var(--d-med) var(--e-out);
@@ -224,7 +235,9 @@ picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
 /* sticky mobile conversion bar */
 .obar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
-  display: none; gap: 0.55rem; padding: 0.6rem var(--gut) calc(0.6rem + env(safe-area-inset-bottom));
+  display: none; gap: 0.55rem;
+  padding: 0.6rem max(var(--gut), env(safe-area-inset-right)) calc(0.6rem + env(safe-area-inset-bottom))
+           max(var(--gut), env(safe-area-inset-left));
   background: color-mix(in oklab, var(--ink) 88%, transparent);
   backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
   border-top: 1px solid var(--rule-soft);
@@ -507,9 +520,16 @@ picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
 .gal__scrim { position: absolute; inset: 0; background: linear-gradient(to top, color-mix(in oklab, var(--ink) 45%, transparent), transparent 45%); pointer-events: none; }
 
 /* lightbox */
+/* Safe areas matter here because the whole overlay is edge to edge under
+   viewport-fit: cover — without the insets the close button sits beneath the
+   iPhone status bar and the side arrows land under the landscape notch. */
 .lb {
   position: fixed; inset: 0; z-index: 200; display: grid; place-items: center;
-  padding: clamp(1rem, 4vw, 3rem);
+  padding:
+    max(clamp(1rem, 4vw, 3rem), env(safe-area-inset-top))
+    max(clamp(1rem, 4vw, 3rem), env(safe-area-inset-right))
+    max(clamp(1rem, 4vw, 3rem), env(safe-area-inset-bottom))
+    max(clamp(1rem, 4vw, 3rem), env(safe-area-inset-left));
   background: color-mix(in oklab, var(--ink) 94%, transparent);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   animation: lbin var(--d-med) var(--e-out);
@@ -525,9 +545,13 @@ picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
   display: grid; place-items: center; transition: background var(--d-fast);
 }
 .lb__nav { top: 50%; transform: translateY(-50%); width: 3rem; height: 3rem; font-size: 1.7rem; line-height: 1; }
-.lb__nav--prev { left: clamp(0.5rem, 2vw, 2rem); }
-.lb__nav--next { right: clamp(0.5rem, 2vw, 2rem); }
-.lb__x { top: clamp(0.8rem, 2vw, 1.6rem); right: clamp(0.8rem, 2vw, 1.6rem); width: 2.6rem; height: 2.6rem; font-size: 1.5rem; }
+.lb__nav--prev { left: max(clamp(0.5rem, 2vw, 2rem), env(safe-area-inset-left)); }
+.lb__nav--next { right: max(clamp(0.5rem, 2vw, 2rem), env(safe-area-inset-right)); }
+.lb__x {
+  top: max(clamp(0.8rem, 2vw, 1.6rem), env(safe-area-inset-top));
+  right: max(clamp(0.8rem, 2vw, 1.6rem), env(safe-area-inset-right));
+  width: 2.75rem; height: 2.75rem; font-size: 1.5rem;
+}
 .lb__nav:hover, .lb__x:hover { background: color-mix(in oklab, var(--bone) 18%, transparent); }
 
 /* ---------------- reserve ----------------

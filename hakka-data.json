@@ -1,0 +1,3448 @@
+{
+ "location": {
+  "id": "310",
+  "address": {
+   "address_1": "4274 St Laurent Blvd",
+   "address_2": null,
+   "city": "Montreal",
+   "country": "Canada",
+   "phone": "+14383809786",
+   "postalCode": "H2W 1Z3",
+   "province": "Quebec",
+   "description": "Other",
+   "countryCode": "CA",
+   "lat": "45.51860043015909",
+   "long": "-73.5833007"
+  },
+  "businessHours": {
+   "days": [
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "monday"
+    },
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "wednesday"
+    },
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "thursday"
+    },
+    {
+     "openAt": "15:00:00.000",
+     "closeAt": "23:00:00.000",
+     "day": "friday"
+    },
+    {
+     "openAt": "13:00:00.000",
+     "closeAt": "23:00:00.000",
+     "day": "saturday"
+    },
+    {
+     "openAt": "13:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "sunday"
+    }
+   ],
+   "enable": true
+  },
+  "delivery": {
+   "enable": true,
+   "days": [
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "monday"
+    },
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "wednesday"
+    },
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "thursday"
+    },
+    {
+     "openAt": "15:00:00.000",
+     "closeAt": "23:00:00.000",
+     "day": "friday"
+    },
+    {
+     "openAt": "13:00:00.000",
+     "closeAt": "23:00:00.000",
+     "day": "saturday"
+    },
+    {
+     "openAt": "13:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "sunday"
+    }
+   ]
+  },
+  "pickup": {
+   "enable": true,
+   "days": [
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "monday"
+    },
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "wednesday"
+    },
+    {
+     "openAt": "16:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "thursday"
+    },
+    {
+     "openAt": "15:00:00.000",
+     "closeAt": "23:00:00.000",
+     "day": "friday"
+    },
+    {
+     "openAt": "13:00:00.000",
+     "closeAt": "23:00:00.000",
+     "day": "saturday"
+    },
+    {
+     "openAt": "13:00:00.000",
+     "closeAt": "22:00:00.000",
+     "day": "sunday"
+    }
+   ]
+  },
+  "deliveryOptionsJson": {},
+  "externalDeliverylink": null,
+  "name": "Hakka Grill",
+  "currency": "cad",
+  "contact": null,
+  "photo": {
+   "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/AB_281_E4_C_4559_4_ACE_8_FFB_59_FB_6_F4_F1_D10_a8743dd712.JPG"
+  },
+  "stripeAccountId": "acct_1SZiqx69jbCcCz09"
+ },
+ "menu": {
+  "id": "289",
+  "categories": [
+   {
+    "en": {
+     "id": "3975",
+     "description": null,
+     "position": 1,
+     "name": "Appetizers",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4038",
+     "description": null,
+     "position": 1,
+     "name": "Entrées",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44744",
+       "description": "A comforting soup made with sweet corn kernels, classic egg drop flowers, tender chicken pieces and a delicate broth.",
+       "handle": "chicken-corn-soup-(l)",
+       "name": "Chicken Corn Soup (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_019_8afc58a5fe.jpg",
+        "alternativeText": null
+       },
+       "price": 23.99,
+       "locale": "en",
+       "localeShareId": 44744,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45549",
+       "description": "Une soupe réconfortante préparée avec des grains de maïs doux, des fleurs de chou\n\n",
+       "handle": "chicken-corn-soup-(l)",
+       "name": "Soupe poulet et mais",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_019_8afc58a5fe.jpg",
+        "alternativeText": null
+       },
+       "price": 23.99,
+       "locale": "fr",
+       "localeShareId": 44744,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44745",
+       "description": "Crispy golden fries tossed in a sweet and savory honey garlic glaze.",
+       "handle": "honey-garlic-fries",
+       "name": "Honey Garlic Fries",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_083_b15ee9fbe6.jpg",
+        "alternativeText": null
+       },
+       "price": 9.99,
+       "locale": "en",
+       "localeShareId": 44745,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45550",
+       "description": "Frites dorées et croustillantes enrobées d'un glaçage sucré\n\n",
+       "handle": "honey-garlic-fries",
+       "name": "Frites au miel et à l'ail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_083_b15ee9fbe6.jpg",
+        "alternativeText": null
+       },
+       "price": 9.99,
+       "locale": "fr",
+       "localeShareId": 44745,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44746",
+       "description": "Crispy golden rolls stuffed with a fresh mix of seasoned vegetables, served with a tangy dipping sauce.",
+       "handle": "spring-rolls",
+       "name": "Spring Rolls",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_034_1f245b4b12.jpg",
+        "alternativeText": null
+       },
+       "price": 8.99,
+       "locale": "en",
+       "localeShareId": 44746,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45551",
+       "description": "Rouleaux dorés et croustillants farcis d'un mélange frais de légumes assaisonnés, servis avec une sauce piquante.\n\n",
+       "handle": "spring-rolls",
+       "name": "Rouleaux de printemps",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_034_1f245b4b12.jpg",
+        "alternativeText": null
+       },
+       "price": 8.99,
+       "locale": "fr",
+       "localeShareId": 44746,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44747",
+       "description": "Juicy shrimp coated in a light, crispy tempura batter, fried to golden perfection and served with dipping sauce.",
+       "handle": "tempura-shrimps",
+       "name": "Tempura Shrimps",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_085_7842cc4088.jpg",
+        "alternativeText": null
+       },
+       "price": 11.99,
+       "locale": "en",
+       "localeShareId": 44747,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45552",
+       "description": "Crevettes juteuses enrobées d'une pâte à tempura légère et croustillante, frites à la perfection et servies avec une sauce.\n\n",
+       "handle": "tempura-shrimps",
+       "name": "Crevettes tempura",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_085_7842cc4088.jpg",
+        "alternativeText": null
+       },
+       "price": 11.99,
+       "locale": "fr",
+       "localeShareId": 44747,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44748",
+       "description": "Chicken wings tossed in golden brown honey garlic glaze",
+       "handle": "honey-galic-wings-(6-pieces)",
+       "name": "Honey Galic Wings (6 pieces)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_039_13aee5d14b.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "en",
+       "localeShareId": 44748,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45553",
+       "description": "Ailes de poulet enrobées d'un glaçage doré au miel et à l'ail.\n\n",
+       "handle": "honey-galic-wings-(6-pieces)",
+       "name": "Ailes au miel et à l'ail (6 pièces)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_039_13aee5d14b.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "fr",
+       "localeShareId": 44748,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44749",
+       "description": "Crispy chicken bites tossed in a sweet and savory honey garlic glaze. A perfect balance of crunch and flavor in every bite!\n\n",
+       "handle": "honey-garlic-chicken-bites",
+       "name": "Honey Garlic Chicken Bites",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_035_40c0f1c283.jpg",
+        "alternativeText": null
+       },
+       "price": 10.99,
+       "locale": "en",
+       "localeShareId": 44749,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45554",
+       "description": "De délicieux morceaux de poulet croustillants enrobés d'une sauce miel\n\n",
+       "handle": "honey-garlic-chicken-bites",
+       "name": "Bouchées de poulet au miel et à l'ail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_035_40c0f1c283.jpg",
+        "alternativeText": null
+       },
+       "price": 10.99,
+       "locale": "fr",
+       "localeShareId": 44749,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44750",
+       "description": "Crispy, golden-battered fish fillets with tender, flaky insides. Served with our dynamite dipping sauce.",
+       "handle": "fried-fish",
+       "name": "Fried Fish",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_043_743069029b.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "en",
+       "localeShareId": 44750,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45555",
+       "description": "Filets de poisson panés, croustillants et dorés, à la chair tendre et feuilletée. Servis avec notre sauce explosif !\n\n",
+       "handle": "fried-fish",
+       "name": "Poisson frit",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_043_743069029b.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "fr",
+       "localeShareId": 44750,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44751",
+       "description": "Crispy and flavorful chicken drum lollipop, marinated and then batter fried until crisp.",
+       "handle": "lollipop-chicken-(4-pieces)",
+       "name": "Lollipop Chicken (4 pieces)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_100_5032483151.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "en",
+       "localeShareId": 44751,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45556",
+       "description": "Sucettes de pilon de poulet croustillantes et savoureuses, marinées puis frites en pâte à beignets jusqu'à ce qu'elles soient croustillantes.\n\n",
+       "handle": "lollipop-chicken-(4-pieces)",
+       "name": "Poulet Lollipop (4 morceaux)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_100_5032483151.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "fr",
+       "localeShareId": 44751,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44752",
+       "description": "Juicy shrimp sautéed in a succulent garlic butter and served with a side of dipping sauce.",
+       "handle": "garlic-shrimps",
+       "name": "Garlic Shrimps",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_062_f2b0643726.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "en",
+       "localeShareId": 44752,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45557",
+       "description": "Crevettes juteuses sautées dans une succulente sauce au beurre à l'ail.\n\n",
+       "handle": "garlic-shrimps",
+       "name": "Crevettes à l'ail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_062_f2b0643726.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "fr",
+       "localeShareId": 44752,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44753",
+       "description": "Single serving of fries.",
+       "handle": "french-fries",
+       "name": "French Fries",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_072_0278759ceb.jpg",
+        "alternativeText": null
+       },
+       "price": 5.99,
+       "locale": "en",
+       "localeShareId": 44753,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45558",
+       "description": "Portion individuelle de frites.",
+       "handle": "french-fries",
+       "name": "Frites",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_072_0278759ceb.jpg",
+        "alternativeText": null
+       },
+       "price": 5.99,
+       "locale": "fr",
+       "localeShareId": 44753,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44754",
+       "description": "Crispy, fried shrimp coated in a spicy mayonnaise dressing.",
+       "handle": "dynamite-shrimps",
+       "name": "Dynamite Shrimps",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_091_cd38c344b2.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "en",
+       "localeShareId": 44754,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45559",
+       "description": "Crevettes frites croustillantes enrobées d'une sauce mayonnaise épicée.\n\n",
+       "handle": "dynamite-shrimps",
+       "name": "Crevettes dynamite",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_091_cd38c344b2.jpg",
+        "alternativeText": null
+       },
+       "price": 12.99,
+       "locale": "fr",
+       "localeShareId": 44754,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44755",
+       "description": "Tender chicken pieces tossed in a spicy mayo sauce.",
+       "handle": "dynamite-chicken",
+       "name": "Dynamite Chicken",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_021_d7d95402cd.jpg",
+        "alternativeText": null
+       },
+       "price": 10.99,
+       "locale": "en",
+       "localeShareId": 44755,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45560",
+       "description": "Morceaux de poulet tendres enrobés d'une sauce mayonnaise épicée.\n\n",
+       "handle": "dynamite-chicken",
+       "name": "Poulet dynamite",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_021_d7d95402cd.jpg",
+        "alternativeText": null
+       },
+       "price": 10.99,
+       "locale": "fr",
+       "localeShareId": 44755,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44756",
+       "description": "A comforting soup made with sweet corn kernels, classic egg drop flowers, tender chicken pieces and a delicate broth.",
+       "handle": "chicken-corn-soup-(s)",
+       "name": "Chicken Corn Soup (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_069_0e2e64a54a.jpg",
+        "alternativeText": null
+       },
+       "price": 8.99,
+       "locale": "en",
+       "localeShareId": 44756,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45561",
+       "description": "Une soupe réconfortante préparée avec des grains de maïs doux, des œufs brouillés classiques, des morceaux de poulet tendres et un bouillon délicat.\n\n",
+       "handle": "chicken-corn-soup-(s)",
+       "name": "Soupe de poulet et maïs (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_069_0e2e64a54a.jpg",
+        "alternativeText": null
+       },
+       "price": 8.99,
+       "locale": "fr",
+       "localeShareId": 44756,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44757",
+       "description": "Our chef's special creation, a rich and flavorful soup with chicken, shrimp and a variety of fresh vegetables.",
+       "handle": "chef-special-soup-(s)",
+       "name": "Chef Special Soup (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_047_1597d7a938.jpg",
+        "alternativeText": null
+       },
+       "price": 9.99,
+       "locale": "en",
+       "localeShareId": 44757,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45562",
+       "description": "La création spéciale de notre chef : une soupe riche et savoureuse au poulet, aux crevettes et à une variété de légumes frais.\n\n",
+       "handle": "chef-special-soup-(s)",
+       "name": "Soupe spéciale du chef (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_047_1597d7a938.jpg",
+        "alternativeText": null
+       },
+       "price": 9.99,
+       "locale": "fr",
+       "localeShareId": 44757,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44842",
+       "description": "Our chef's special creation, a rich and flavorful soup with chicken, shrimp and a variety of fresh vegetables.",
+       "handle": "chef-special-soup-(l)",
+       "name": "Chef Special Soup (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_067_e3bc003a83.jpg",
+        "alternativeText": null
+       },
+       "price": 25.99,
+       "locale": "en",
+       "localeShareId": 44842,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45563",
+       "description": "La création spéciale de notre chef : une soupe riche et savoureuse au poulet, aux crevettes et à une variété de légumes frais.\n\n",
+       "handle": "chef-special-soup-(l)",
+       "name": "Soupe spéciale du chef (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_067_e3bc003a83.jpg",
+        "alternativeText": null
+       },
+       "price": 25.99,
+       "locale": "fr",
+       "localeShareId": 44842,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3984",
+     "description": null,
+     "position": 2,
+     "name": "Main Course Large Serving",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4039",
+     "description": null,
+     "position": 2,
+     "name": "Plat Principal Grande Portion",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44812",
+       "description": "Crispy Shrimp tossed in a sweet, salty, crispy, sticky and a little bit spicy, garnished with sesame seeds.\n\n",
+       "handle": "sesame-shrimps",
+       "name": "Sesame Shrimps (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_059_cfe6754bbf.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "en",
+       "localeShareId": 44812,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45564",
+       "description": "Crevettes croustillantes enrobées d'une sauce sucrée et parsemé de graines de sésame pour plus de saveur et de croquant.\n\n",
+       "handle": "sesame-shrimps",
+       "name": "Crevettes au sésame",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_059_cfe6754bbf.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "fr",
+       "localeShareId": 44812,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44813",
+       "description": "Crispy chicken tossed in a sweet and sour sauce with mixed bell peppers and pineapple.",
+       "handle": "sweet-and-sour-chicken",
+       "name": "Sweet and Sour Chicken (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_055_c098b175b9.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44813,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45565",
+       "description": "Poulet croustillant enrobé d'une sauce aigre-doux avec des poivrons et ananas\n\n",
+       "handle": "sweet-and-sour-chicken",
+       "name": "Poulet aigre-doux",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_055_c098b175b9.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44813,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44814",
+       "description": "Crispy shrimp tossed in a sweet and sour sauce with mixed bell peppers and pineapple.\n\n",
+       "handle": "sweet-and-sour-shrimps",
+       "name": "Sweet and Sour Shrimps (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_070_5e8dfe3405.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "en",
+       "localeShareId": 44814,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45566",
+       "description": "Crevettes croustillantes enrobées d'une sauce aigre-doux avec des poivrons et ananas\n\n",
+       "handle": "sweet-and-sour-shrimps",
+       "name": "Crevettes aigres-douces",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_070_5e8dfe3405.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "fr",
+       "localeShareId": 44814,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44815",
+       "description": "Crispy chicken tossed in a sweet, salty, crispy, sticky and a little bit spicy sauce, garnished with sesame seeds.",
+       "handle": "sesame-chicken",
+       "name": "Sesame Chicken (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_024_ba1efd800b.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44815,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45567",
+       "description": "Du poulet frit croustillant, enrobé d'un glaçage sucré et parsemé de graines de sésame pour plus de saveur et de croquant.\n\n",
+       "handle": "sesame-chicken",
+       "name": "Poulet au sésame",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_024_ba1efd800b.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44815,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44816",
+       "description": "Sliced beef stir-fried with onions and scallions in a savory Mongolian sauce.",
+       "handle": "mongolian-beef",
+       "name": "Mongolian Beef (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_080_a3ef5b9762.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "en",
+       "localeShareId": 44816,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45568",
+       "description": "Bœuf tendre frit avec brocoli et oignons dans une sauce soja sucrée et légèrement épicée\n\n",
+       "handle": "mongolian-beef",
+       "name": "Boeuf Mongol",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_080_a3ef5b9762.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "fr",
+       "localeShareId": 44816,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44817",
+       "description": "Sliced chicken stir-fried with onions and scallions in a savory Mongolian sauce.",
+       "handle": "mongolian-chicken",
+       "name": "Mongolian Chicken (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_052_048c23f014.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44817,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45569",
+       "description": "Poulet sauté avec des oignons et des oignons verts dans une savoureuse sauce soja sucrée et légèrement épicée\n\n",
+       "handle": "mongolian-chicken",
+       "name": "Poulet mongol",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_052_048c23f014.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44817,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44818",
+       "description": "A classic Chinese dish with diced chicken, peanuts, and vegetables in a salty, sweet and spicy sauce.-gh",
+       "handle": "kung-pao-chicken-undefined",
+       "name": "Kung Pao Chicken (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_053_c41343a1e4.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44818,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45570",
+       "description": "Un plat chinois classique composé de poulet en dés, de cacahuètes et de légumes dans une sauce salée, sucrée et épicée.\n\n",
+       "handle": "kung-pao-chicken-undefined",
+       "name": "Poulet Kung Pao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_053_c41343a1e4.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44818,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44819",
+       "description": "A classic Chinese dish with diced beef, peanuts, and vegetables in a salty, sweet and spicy sauce.",
+       "handle": "kung-pao-beef",
+       "name": "Kung Pao Beef (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_053_c41343a1e4.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "en",
+       "localeShareId": 44819,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45571",
+       "description": "Un plat chinois classique composé de bœuf en dés, de cacahuètes et de légumes dans une sauce salée, sucrée et épicée.\n\n",
+       "handle": "kung-pao-beef",
+       "name": "Boeuf kung pao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_053_c41343a1e4.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "fr",
+       "localeShareId": 44819,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44820",
+       "description": "Double deep-fried chicken coated with sticky, spicy and sweet sauce.",
+       "handle": "korean-chicken",
+       "name": "Korean Chicken (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_098_d32f654e02.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44820,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45572",
+       "description": "Poulet frit, enrobé d'une sauce collante, épicée et sucrée.\n\n",
+       "handle": "korean-chicken",
+       "name": "Poulet coréen",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_098_d32f654e02.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44820,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44821",
+       "description": "Tender fish fillets cooked in a rich, creamy white sauce with delicate spices. A smooth and flavorful delight!",
+       "handle": "heavenly-white-sauce-fish",
+       "name": "Heavenly White Sauce Fish (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_007_5ebed78492.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "en",
+       "localeShareId": 44821,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45573",
+       "description": "De tendres filets de poisson cuits dans une sauce blanche onctueuse et riche, délicatement épicée. Un délice fondant et savoureux !\n\n",
+       "handle": "heavenly-white-sauce-fish",
+       "name": "Poisson à la sauce blanche divine",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_007_5ebed78492.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "fr",
+       "localeShareId": 44821,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44822",
+       "description": "Crispy chicken tossed in a sweet, tangy, and slightly spicy sauce, known for its rich glaze and bold flavor.",
+       "handle": "general-tso-chicken",
+       "name": "General Tso Chicken (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_098_d32f654e02.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44822,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45574",
+       "description": "Du poulet croustillant enrobé d'une sauce légèrement épicée, réputée pour son glaçage riche et sa saveur prononcée.\n\n",
+       "handle": "general-tso-chicken",
+       "name": "Poulet du General Tso",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_098_d32f654e02.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44822,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44823",
+       "description": "Chicken cooked with fresh chili peppers, onions, and bell peppers in a spicy sauce.",
+       "handle": "chili-chicken",
+       "name": "Chili Chicken (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_031_70ee9d365a.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44823,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45575",
+       "description": "Poulet cuit avec des piments frais, des oignons et des poivrons dans une sauce épicée.\n\n",
+       "handle": "chili-chicken",
+       "name": "Poulet Chilli",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_031_70ee9d365a.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44823,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44824",
+       "description": "Beef cooked with fresh chili peppers, onions, and bell peppers in a spicy sauce.",
+       "handle": "chili-beef",
+       "name": "Chili Beef (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_093_85d3d64226.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "en",
+       "localeShareId": 44824,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45576",
+       "description": "Bœuf cuit avec des piments frais, des oignons et des poivrons dans une sauce épicée.\n\n",
+       "handle": "chili-beef",
+       "name": "Chilli au boeuf",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_093_85d3d64226.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "fr",
+       "localeShareId": 44824,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44825",
+       "description": "Tender chicken cooked in a tangy, spiced sauce offering a burst of bold flavors.",
+       "handle": "chicken-shashlik",
+       "name": "Chicken Shashlik (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_036_5749f0c9d9.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44825,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45577",
+       "description": "Du poulet tendre cuit dans une sauce acidulée et épicée offrant une explosion de saveurs audacieuses.\n\n",
+       "handle": "chicken-shashlik",
+       "name": "Poulet Shashlik",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_036_5749f0c9d9.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44825,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44826",
+       "description": "Deep-fried chicken tossed in a spicy, tangy soy-garlic sauce with a hint of chili.",
+       "handle": "chicken-manchurian",
+       "name": "Chicken Manchurian (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_092_bdbd193a7e.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44826,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45578",
+       "description": "Poulet frit enrobé d'une sauce soja épicée et acidulée\n\n",
+       "handle": "chicken-manchurian",
+       "name": "Poulet Manchurian",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_092_bdbd193a7e.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44826,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3985",
+     "description": null,
+     "position": 2,
+     "name": "Main Course Single Serving",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4040",
+     "description": null,
+     "position": 2,
+     "name": "Plat Principal Portion Individuelle",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44827",
+       "description": "Crispy fried Shrimps tossed in a vibrant sweet and tangy sauce with bell peppers, onions, and pineapple.",
+       "handle": "sweet-and-sour-shrimps",
+       "name": "Sweet & Sour Shrimps (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_041_2ef85d9121.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "en",
+       "localeShareId": 44827,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45581",
+       "description": "Crevettes frites croustillantes, enrobées d'une sauce aigre douce et savoureuse, avec des poivrons, des oignons et de l'ananas.\n\n",
+       "handle": "sweet-and-sour-shrimps",
+       "name": "Crevettes aigres douces",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_041_2ef85d9121.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "fr",
+       "localeShareId": 44827,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44828",
+       "description": "Crispy fried chicken tossed in a vibrant sweet and tangy sauce with bell peppers, onions, and pineapple.",
+       "handle": "sweet-and-sour-chicken",
+       "name": "Sweet & Sour Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_026_b1b9d36b6a.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44828,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45582",
+       "description": "Du poulet frit croustillant enrobé d'une sauce aigre-douce et savoureuse, avec des poivrons, des oignons et de l'ananas.\n\n",
+       "handle": "sweet-and-sour-chicken",
+       "name": "Poulet aigre-doux",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_026_b1b9d36b6a.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44828,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44829",
+       "description": "Crispy chicken tossed in a tangy, spicy sauce with bell peppers and onions for a bold, smoky flavor.",
+       "handle": "chicken-shashlik",
+       "name": "Chicken Shashlik (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_051_b01144f658.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44829,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45583",
+       "description": "Du poulet croustillant enrobé d'une sauce acidulée et épicée avec des poivrons et des oignons pour une saveur fumée prononcée.\n\n",
+       "handle": "chicken-shashlik",
+       "name": "Chachlik de poulet",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_051_b01144f658.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44829,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44830",
+       "description": "Crispy fried shrimp tossed in a sweet, tangy glaze and sprinkled with sesame seeds for a rich, crunchy finish.",
+       "handle": "sesame-shrimp",
+       "name": "Sesame Shrimp (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_030_4b5002d5ba.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "en",
+       "localeShareId": 44830,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45584",
+       "description": "Crevettes frites croustillantes, enrobées d'un glaçage sucrées et parsemées de graines de sésame pour une finition riche et croquante.\n\n",
+       "handle": "sesame-shrimp",
+       "name": "Crevettes au sésame",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_030_4b5002d5ba.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "fr",
+       "localeShareId": 44830,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44831",
+       "description": "Crispy fried chicken coated in a sweet glaze and topped with sesame seeds for extra flavor and crunch.",
+       "handle": "sesame-chicken",
+       "name": "Sesame Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_022_3ce2fa5b26.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44831,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45585",
+       "description": "Du poulet frit croustillant, enrobé d'un glaçage sucré et parsemé de graines de sésame pour plus de saveur et de croquant.\n\n",
+       "handle": "sesame-chicken",
+       "name": "Poulet au sésame",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_022_3ce2fa5b26.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44831,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44832",
+       "description": "ender chicken stir-fried with broccoli, and onions in a sweet and mildly spicy soy-based glaze.",
+       "handle": "mongolian-chicken",
+       "name": "Mongolian Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_078_42b80c986f.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44832,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45586",
+       "description": "Poulet tendre avec brocolis et oignons dans une sauce soja sucrée et légèrement épicée\n\n",
+       "handle": "mongolian-chicken",
+       "name": "Poulet mongol",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_078_42b80c986f.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44832,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44833",
+       "description": "Tender beef stir-fried with broccoli and onions in a sweet and mildly spicy soy-based glaze.",
+       "handle": "mongolian-beef",
+       "name": "Mongolian Beef (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_037_ffe6d62028.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "en",
+       "localeShareId": 44833,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45587",
+       "description": "Bœuf tendre frit avec brocoli et oignons dans une sauce soja sucrée et légèrement épicée\n\n",
+       "handle": "mongolian-beef",
+       "name": "Bœuf mongol",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_037_ffe6d62028.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "fr",
+       "localeShareId": 44833,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44834",
+       "description": "Crispy fried chicken tossed in a tangy, spicy Indo-Chinese sauce with garlic, soy, and green onions.",
+       "handle": "manchurian-chicken",
+       "name": "Manchurian Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_045_0f5d20086f.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44834,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45588",
+       "description": "Poulet frit croustillant enrobé d'une sauce indo-Chinois avec ail,soja et oignons vertes.\n\n",
+       "handle": "manchurian-chicken",
+       "name": "Poulet Manchurian",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_045_0f5d20086f.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44834,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44835",
+       "description": "Juicy chicken stir-fried with peanuts, and bell peppers in a spicy, tangy soy-based sauce.",
+       "handle": "kung-pao-chicken",
+       "name": "Kung Pao Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_076_396d4070bd.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44835,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45589",
+       "description": "Du poulet frit juteux cuit dans de l'huile d'arachide avec des cacahuètes croquantes et des poivrons colorés, le tout enrobé d'une sauce soja épicée et acidulée.\n\n",
+       "handle": "kung-pao-chicken",
+       "name": "Poulet Kung Pao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_076_396d4070bd.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44835,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44836",
+       "description": "Tender beef stir-fried with peanuts and bell peppers in a spicy, tangy soy-based sauce.",
+       "handle": "kung-pao-beef",
+       "name": "Kung Pao Beef (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_061_5686813b74.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "en",
+       "localeShareId": 44836,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45590",
+       "description": "Du boeuf frit juteux cuit dans de l'huile d'arachide avec des cacahuètes croquantes et des poivrons colorés, le tout enrobé d'une sauce soja épicée et acidulée.\n\n",
+       "handle": "kung-pao-beef",
+       "name": "Boeuf Kung Pao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_061_5686813b74.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "fr",
+       "localeShareId": 44836,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44837",
+       "description": "Crispy fried basa fillet smothered in a rich, creamy oregano-based white sauce for a smooth and savory flavor.",
+       "handle": "heavenly-white-sauce-fish",
+       "name": "Heavenly White Sauce Fish (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_028_4ee92fb363.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "en",
+       "localeShareId": 44837,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45591",
+       "description": "Filet de basa frit et croustillant, nappé d'une riche sauce blanche crémeuse à base d'origan pour une saveur onctueuse et savoureuse.\n\n",
+       "handle": "heavenly-white-sauce-fish",
+       "name": "Poisson à la sauce blanche divine",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_028_4ee92fb363.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "fr",
+       "localeShareId": 44837,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44838",
+       "description": "rispy fried chicken coated in a sticky, sweet, and spicy, famous for its crunch and bold flavor.",
+       "handle": "korean-chicken",
+       "name": "Korean Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_011_f41eb240ad.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44838,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45592",
+       "description": "Du poulet frit croustillant enrobé d'une sauce collante, sucrée et épicée, célèbre pour son croustillant et sa saveur prononcée.\n\n",
+       "handle": "korean-chicken",
+       "name": "Poulet coréen",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_011_f41eb240ad.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44838,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44839",
+       "description": "Crispy chicken tossed in a sweet, tangy, and slightly spicy sauce, known for its rich glaze and bold flavour.",
+       "handle": "general-tao-chicken",
+       "name": "General Tao Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_101_ca9fe10d01.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44839,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45593",
+       "description": "Du poulet croustillant enrobé d'une sauce aigre-douce et légèrement épicée, réputée pour son glaçage riche et sa saveur prononcée.\n\n",
+       "handle": "general-tao-chicken",
+       "name": "Poulet Général Tao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_101_ca9fe10d01.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44839,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44840",
+       "description": "Crispy fried chicken with peppers and onions in a home-made spicy sauce",
+       "handle": "chilli-chicken",
+       "name": "Chilli Chicken (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_029_f1d80ea849.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44840,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45594",
+       "description": "Poulet frit croustillant avec poivrons et oignons dans une sauce épicée maison.\n\n",
+       "handle": "chilli-chicken",
+       "name": "Poulet Chili",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_029_f1d80ea849.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44840,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44841",
+       "description": "Beef stir-fried with fresh chilli peppers, onions and bell peppers in a spicy sauce",
+       "handle": "chilli-beef",
+       "name": "Chilli Beef (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_077_358b8705d8.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "en",
+       "localeShareId": 44841,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45595",
+       "description": "Bœuf frit croustillant avec poivrons et oignons dans une sauce épicée maison.\n\n",
+       "handle": "chilli-beef",
+       "name": "Bœuf Chili",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_077_358b8705d8.jpg",
+        "alternativeText": null
+       },
+       "price": 20.99,
+       "locale": "fr",
+       "localeShareId": 44841,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3977",
+     "description": null,
+     "position": 3,
+     "name": "Rice",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4041",
+     "description": null,
+     "position": 3,
+     "name": "Riz",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44759",
+       "description": "Stir-fried rice with eggs",
+       "handle": "egg-fried-rice",
+       "name": "Egg Fried Rice",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_071_44e1f6e1f3.jpg",
+        "alternativeText": null
+       },
+       "price": 13.99,
+       "locale": "en",
+       "localeShareId": 44759,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45596",
+       "description": "Riz sauté aux œufs\n\n",
+       "handle": "egg-fried-rice",
+       "name": "Riz frit aux œufs",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_071_44e1f6e1f3.jpg",
+        "alternativeText": null
+       },
+       "price": 13.99,
+       "locale": "fr",
+       "localeShareId": 44759,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44760",
+       "description": "Plain white basmati Rice.",
+       "handle": "white-rice",
+       "name": "White Rice",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_020_34a62684ec.jpg",
+        "alternativeText": null
+       },
+       "price": 10.99,
+       "locale": "en",
+       "localeShareId": 44760,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45597",
+       "description": "Riz basmati blanc nature.\n\n",
+       "handle": "white-rice",
+       "name": "Riz Blanc",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_020_34a62684ec.jpg",
+        "alternativeText": null
+       },
+       "price": 10.99,
+       "locale": "fr",
+       "localeShareId": 44760,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44761",
+       "description": "Fried rice with a mix of fresh vegetables.",
+       "handle": "vegetable-rice",
+       "name": "Vegetable Rice",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_013_78bc27d41f.jpg",
+        "alternativeText": null
+       },
+       "price": 15.99,
+       "locale": "en",
+       "localeShareId": 44761,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45598",
+       "description": "Riz frit avec un mélange de légumes frais.\n\n",
+       "handle": "vegetable-rice",
+       "name": "Riz aux légumes",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_013_78bc27d41f.jpg",
+        "alternativeText": null
+       },
+       "price": 15.99,
+       "locale": "fr",
+       "localeShareId": 44761,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44762",
+       "description": "Fluffy rice stir-fried with shrimp, eggs, and vegetables.",
+       "handle": "riz-frit-aux-crevettes",
+       "name": "Shrimp Fried Rice",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_096_323a2d1e22.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "en",
+       "localeShareId": 44762,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45599",
+       "description": "Riz sauté moelleux aux crevettes et aux légumes.\n\n",
+       "handle": "riz-frit-aux-crevettes",
+       "name": "Riz frit aux crevettes",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_096_323a2d1e22.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "fr",
+       "localeShareId": 44762,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44763",
+       "description": "Stir-fried rice with tender chicken, vegetables, soy sauce, and aromatic spices. A flavorful and satisfying classic.",
+       "handle": "chicken-fried-rice",
+       "name": "Chicken Fried Rice",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_012_c7a703598c.jpg",
+        "alternativeText": null
+       },
+       "price": 17.99,
+       "locale": "en",
+       "localeShareId": 44763,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45600",
+       "description": "Riz sauté au poulet tendre, légumes, sauce soja et épices aromatiques. Un classique savoureux et réconfortant.\n\n",
+       "handle": "chicken-fried-rice",
+       "name": "Riz Frit Au Poulet",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_012_c7a703598c.jpg",
+        "alternativeText": null
+       },
+       "price": 17.99,
+       "locale": "fr",
+       "localeShareId": 44763,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44764",
+       "description": "Special fried rice with a medley of Beef, Shrimps, Chicken and vegetables.",
+       "handle": "chef-rice",
+       "name": "Chef Rice",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_089_ec699ce3b0.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "en",
+       "localeShareId": 44764,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45601",
+       "description": "Riz frit spécial avec un mélange de bœuf, de crevettes, de poulet et de légumes.\n\n",
+       "handle": "chef-rice",
+       "name": "Chef Riz",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_089_ec699ce3b0.jpg",
+        "alternativeText": null
+       },
+       "price": 19.99,
+       "locale": "fr",
+       "localeShareId": 44764,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3978",
+     "description": null,
+     "position": 4,
+     "name": "Chow Mein",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "3978",
+     "description": null,
+     "position": 4,
+     "name": "Chow Mein",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44765",
+       "description": "Our chef's special chow Mein with a combination of chicken, beef, shrimp, and vegetables.",
+       "handle": "chef's-special-chow-mein-(l)",
+       "name": "Chef's Special Chow Mein (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_040_7ba511ca77.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "en",
+       "localeShareId": 44765,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45602",
+       "description": "Le chow mein spécial de notre chef, composé de poulet, de bœuf, de crevettes et de légumes.\n\n",
+       "handle": "chef's-special-chow-mein-(l)",
+       "name": "Chow Mein spécial du chef (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_040_7ba511ca77.jpg",
+        "alternativeText": null
+       },
+       "price": 26.99,
+       "locale": "fr",
+       "localeShareId": 44765,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44766",
+       "description": "Stir-fried noodles with chicken and mixed vegetables in a Flavorful sauce.",
+       "handle": "chicken-chow-mein-(l)",
+       "name": "Chicken Chow Mein (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_063_2504d03c8f.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "en",
+       "localeShareId": 44766,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45603",
+       "description": "Nouilles sautées au poulet et aux légumes variés dans une sauce savoureuse.\n\n",
+       "handle": "chicken-chow-mein-(l)",
+       "name": "Chow Mein au poulet (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_063_2504d03c8f.jpg",
+        "alternativeText": null
+       },
+       "price": 24.99,
+       "locale": "fr",
+       "localeShareId": 44766,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44767",
+       "description": "Stir-fried noodles with plump shrimp and crisp vegetables in a flavourful sauce.",
+       "handle": "shrimp-chow-mein-(l)",
+       "name": "Shrimp Chow Mein (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_087_48a1520d70.jpg",
+        "alternativeText": null
+       },
+       "price": 25.99,
+       "locale": "en",
+       "localeShareId": 44767,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45604",
+       "description": "Nouilles sautées avec des crevettes et des légumes dans une sauce savoureuse sauce.\n\n",
+       "handle": "shrimp-chow-mein-(l)",
+       "name": "Chow Mein aux crevettes (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_087_48a1520d70.jpg",
+        "alternativeText": null
+       },
+       "price": 25.99,
+       "locale": "fr",
+       "localeShareId": 44767,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44768",
+       "description": "Stir-fried noodles with a variety of fresh vegetables in a flavorful sauce.",
+       "handle": "vegi-chow-mein-(l)",
+       "name": "Vegi chow Mein (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_044_f6418f34c6.jpg",
+        "alternativeText": null
+       },
+       "price": 23.99,
+       "locale": "en",
+       "localeShareId": 44768,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45605",
+       "description": "Nouilles sautées avec un assortiment de légumes frais dans une sauce savoureuse.\n\n",
+       "handle": "vegi-chow-mein-(l)",
+       "name": "Chow Mein aux légumes (L)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_044_f6418f34c6.jpg",
+        "alternativeText": null
+       },
+       "price": 23.99,
+       "locale": "fr",
+       "localeShareId": 44768,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44769",
+       "description": "Our chef's special chow Mein with a combination of chicken, beef, shrimp, and vegetables.",
+       "handle": "chef-special-chow-mein-(s)",
+       "name": "Chef special Chow Mein (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_084_2f48b05d43.jpg",
+        "alternativeText": null
+       },
+       "price": 17.99,
+       "locale": "en",
+       "localeShareId": 44769,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45606",
+       "description": "Le chow mein spécial de notre chef, composé de poulet, de bœuf, des crevettes et des légumes.\n\n",
+       "handle": "chef-special-chow-mein-(s)",
+       "name": "Chow Mein spécial du chef (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_084_2f48b05d43.jpg",
+        "alternativeText": null
+       },
+       "price": 17.99,
+       "locale": "fr",
+       "localeShareId": 44769,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44770",
+       "description": "Stir-fried noodles with a variety of fresh vegetables in a flavorful sauce.",
+       "handle": "vegi-chow-mein-(s)",
+       "name": "Vegi Chow Mein (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_023_ce53000bf7.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "en",
+       "localeShareId": 44770,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45607",
+       "description": "Nouilles sautées avec un assortiment des légumes frais dans une sauce savoureuse.\n\n",
+       "handle": "vegi-chow-mein-(s)",
+       "name": "Chow Mein aux légumes (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_023_ce53000bf7.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "fr",
+       "localeShareId": 44770,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44771",
+       "description": "Stir-fried noodles with plump shrimp and crisp vegetables in a flavorful sauce.",
+       "handle": "shrimp-chow-mein-(s)",
+       "name": "Shrimp Chow Mein (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_066_3e992ab61e.jpg",
+        "alternativeText": null
+       },
+       "price": 16.99,
+       "locale": "en",
+       "localeShareId": 44771,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45608",
+       "description": "Nouilles sautées avec des crevettes charnues et des légumes croquants dans une sauce savoureuse.\n\n",
+       "handle": "shrimp-chow-mein-(s)",
+       "name": "Chow Mein aux crevettes (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_066_3e992ab61e.jpg",
+        "alternativeText": null
+       },
+       "price": 16.99,
+       "locale": "fr",
+       "localeShareId": 44771,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44772",
+       "description": "Stir-fried noodles with chicken and mixed vegetables in a savory sauce.",
+       "handle": "chicken-chow-mein-(s)",
+       "name": "Chicken Chow Mein (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_056_2afa8cd8f1.jpg",
+        "alternativeText": null
+       },
+       "price": 15.99,
+       "locale": "en",
+       "localeShareId": 44772,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45609",
+       "description": "Nouilles sautées au poulet et aux légumes variés dans une sauce savoureuse.\n\n",
+       "handle": "chicken-chow-mein-(s)",
+       "name": "Chow Mein au poulet (S)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_056_2afa8cd8f1.jpg",
+        "alternativeText": null
+       },
+       "price": 15.99,
+       "locale": "fr",
+       "localeShareId": 44772,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3979",
+     "description": null,
+     "position": 5,
+     "name": "Asian Style Burgers",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4042",
+     "description": null,
+     "position": 5,
+     "name": "Burgers à l'asiatique",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44773",
+       "description": "A fusion of Korean flavors with juicy chicken and chef special slaw.",
+       "handle": "korean-chicken-burger",
+       "name": "Korean Chicken Burger",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "en",
+       "localeShareId": 44773,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45610",
+       "description": "Une fusion de saveurs coréennes avec du poulet juteux et une salade de chou spéciale du chef.\n\n",
+       "handle": "korean-chicken-burger",
+       "name": "Burger de poulet coréen",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "fr",
+       "localeShareId": 44773,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44774",
+       "description": "Experience the bold flavors of General Tso's sauce in this delectable chicken.",
+       "handle": "general-tso-chicken-burger-trio",
+       "name": "General Tso Chicken Burger Trio",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_060_291abae502.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "en",
+       "localeShareId": 44774,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45611",
+       "description": "Découvrez les saveurs audacieuses de la sauce du général Tso dans ce délicieux burger au poulet.\n\n",
+       "handle": "general-tso-chicken-burger-trio",
+       "name": "Trio de burgers au poulet Général Tao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_060_291abae502.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "fr",
+       "localeShareId": 44774,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44775",
+       "description": "A fusion of Korean flavors with juicy chicken and chef special slaw. Comes with Fries and Soda",
+       "handle": "korean-chicken-burger-trio",
+       "name": "Korean Chicken Burger Trio",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_075_cf1217ac57.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "en",
+       "localeShareId": 44775,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45612",
+       "description": "Un mélange de saveurs coréennes avec du poulet juteux et une salade de chou spéciale du chef. Servi avec des frites et une boisson gazeuse.\n\n",
+       "handle": "korean-chicken-burger-trio",
+       "name": "Trio de burgers au poulet coréen",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_075_cf1217ac57.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "fr",
+       "localeShareId": 44775,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44776",
+       "description": "Spicy and savory, featuring diced chicken, peanuts, and vegetables in a Kung Pao sauce. Comes with Fries and Soda",
+       "handle": "kung-pao-chicken-burger-trio",
+       "name": "Kung Pao Chicken Burger Trio",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_075_cf1217ac57.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "en",
+       "localeShareId": 44776,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45613",
+       "description": "Épicé et savoureux ce burger est composé de poulet dans une sauce Kung Pao. Servi avec des frites et une boisson gazeuse.\n\n",
+       "handle": "kung-pao-chicken-burger-trio",
+       "name": "Trio de burgers au poulet Kung Pao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_075_cf1217ac57.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "fr",
+       "localeShareId": 44776,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44777",
+       "description": "Sliced chicken stir-fried with onions and scallions in a savory Mongolian sauce. Comes with Fries and Soda",
+       "handle": "mongolian-chicken-burger-trio",
+       "name": "Mongolian Chicken Burger Trio",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_075_cf1217ac57.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "en",
+       "localeShareId": 44777,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45614",
+       "description": "Galette de poulet enrobée d'une savoureuse sauce mongole. Servie avec des frites et une boisson gazeuse.\n\n",
+       "handle": "mongolian-chicken-burger-trio",
+       "name": "Trio de burgers au poulet mongol",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_075_cf1217ac57.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "fr",
+       "localeShareId": 44777,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44778",
+       "description": "Spicy and savory, featuring diced chicken, peanuts, and vegetables in a Kung Pao sauce.",
+       "handle": "kung-pao-chicken-burger",
+       "name": "Kung Pao Chicken Burger",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "en",
+       "localeShareId": 44778,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45615",
+       "description": "Épicé et savoureux ce burger est composé de poulet dans une sauce\n\n",
+       "handle": "kung-pao-chicken-burger",
+       "name": "Burger au poulet kung pao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "fr",
+       "localeShareId": 44778,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44779",
+       "description": "Sliced chicken stir-fried with onions and scallions in a savory Mongolian sauce.",
+       "handle": "mongolian-chicken-burger-single",
+       "name": "Mongolian Chicken Burger Single",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "en",
+       "localeShareId": 44779,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45616",
+       "description": "Galette de poulet enrobée d'une savoureuse sauce mongol.\n\n",
+       "handle": "mongolian-chicken-burger-single",
+       "name": "burger au poulet mongol",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "fr",
+       "localeShareId": 44779,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44780",
+       "description": "Experience the bold flavors of General Tso's sauce in this delectable chicken.",
+       "handle": "general-tso-chicken-burger-single",
+       "name": "General Tso Chicken Burger Single",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "en",
+       "localeShareId": 44780,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45617",
+       "description": "Découvrez les saveurs audacieuses de la sauce du général Tso dans ce burger.\n\n",
+       "handle": "general-tso-chicken-burger-single",
+       "name": "Burger de general tao",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "fr",
+       "localeShareId": 44780,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3980",
+     "description": null,
+     "position": 6,
+     "name": "Classic Burgers",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4043",
+     "description": null,
+     "position": 1,
+     "name": "Burgers Classiques",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44781",
+       "description": "Crispy fried chicken topped with lettuce, pickles and spicy mayo sauce. comes with Fries and Soda",
+       "handle": "crispy-fried-chicken-burger-trio",
+       "name": "Crispy Fried Chicken Burger Trio",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_042_a255341397.jpg",
+        "alternativeText": null
+       },
+       "price": 16.99,
+       "locale": "en",
+       "localeShareId": 44781,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45618",
+       "description": "Poulet frit croustillant garni de laitue, de cornichons et de sauce.\n\n",
+       "handle": "crispy-fried-chicken-burger-trio",
+       "name": "Burger de poulet frit croustillant (trio)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_042_a255341397.jpg",
+        "alternativeText": null
+       },
+       "price": 16.99,
+       "locale": "fr",
+       "localeShareId": 44781,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44782",
+       "description": "Crispy fried chicken topped with lettuce, pickles and spicy mayo sauce.",
+       "handle": "crispy-fried-chicken-burger-single",
+       "name": "Crispy Fried Chicken Burger Single",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_008_69e1c2bc75.jpg",
+        "alternativeText": null
+       },
+       "price": 13.99,
+       "locale": "en",
+       "localeShareId": 44782,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45619",
+       "description": "Poulet frit croustillant garni de laitue, de cornichons et de sauce.\n\n",
+       "handle": "crispy-fried-chicken-burger-single",
+       "name": "Burger de poulet frit croustillant",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_008_69e1c2bc75.jpg",
+        "alternativeText": null
+       },
+       "price": 13.99,
+       "locale": "fr",
+       "localeShareId": 44782,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44783",
+       "description": "A mouthwatering burger featuring a savory mushroom sauce, caramelized onions and a succulent beef patty, along with our special homemade sauce. Comes with Fries and Soda",
+       "handle": "mushroom-beef-burger-trio",
+       "name": "Mushroom Beef Burger Trio",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_082_664345bf42.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "en",
+       "localeShareId": 44783,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45620",
+       "description": "Un burger appétissant composé d'une savoureuse sauce aux champignons, d'oignons caramélisés et d'un steak haché succulent, le tout nappé de notre sauce maison spéciale. Servi avec des frites et une boisson gazeuse.\n\n",
+       "handle": "mushroom-beef-burger-trio",
+       "name": "Burger au boeuf et champignons.(trio)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_082_664345bf42.jpg",
+        "alternativeText": null
+       },
+       "price": 18.99,
+       "locale": "fr",
+       "localeShareId": 44783,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44784",
+       "description": "A mouthwatering burger featuring a savory mushroom sauce, caramelized onions and a succulent beef patty, along with our special homemade sauce.",
+       "handle": "mushroom-beef-burger-single",
+       "name": "Mushroom Beef Burger Single",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "en",
+       "localeShareId": 44784,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45621",
+       "description": "Un burger appétissant composé d'une savoureuse sauce aux champignons, d'oignons caramélisés et d'un steak haché succulent, le tout nappé de notre sauce maison spéciale.\n\n",
+       "handle": "mushroom-beef-burger-single",
+       "name": "Burger au boeuf et champignons.",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_090_3124a4d5cc.jpg",
+        "alternativeText": null
+       },
+       "price": 14.99,
+       "locale": "fr",
+       "localeShareId": 44784,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44785",
+       "description": "A timeless favorite featuring a juicy beef patty, homemade special sauce topped with cheese in a brioche bun. Comes with Soda and Fries",
+       "handle": "beef-cheeseburger-trio",
+       "name": "Beef Cheeseburger Trio",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_002_cd4b30bfc5.jpg",
+        "alternativeText": null
+       },
+       "price": 16.99,
+       "locale": "en",
+       "localeShareId": 44785,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45622",
+       "description": "Un classique indémodable Gallette de boeuf juteux, une sauce spéciale maison et du fromage fondu dans un pain. Servi avec une boisson gazeuse et des frites.\n\n",
+       "handle": "beef-cheeseburger-trio",
+       "name": "Burger de boeuf (trio)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_002_cd4b30bfc5.jpg",
+        "alternativeText": null
+       },
+       "price": 16.99,
+       "locale": "fr",
+       "localeShareId": 44785,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44786",
+       "description": "A timeless favorite featuring a juicy beef patty, homemade special sauce topped with cheese in a brioche bun.",
+       "handle": "beef-chees-burger-single",
+       "name": "Beef Chees Burger Single",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_027_5c643bf6f0.jpg",
+        "alternativeText": null
+       },
+       "price": 13.99,
+       "locale": "en",
+       "localeShareId": 44786,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45623",
+       "description": "Un classique indémodable Gallette de boeuf juteux, une sauce spéciale maison et du fromage fondu dans un pain. Servi avec une boisson gazeuse et des frites.\n\n",
+       "handle": "beef-chees-burger-single",
+       "name": "Burger de boeuf",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_027_5c643bf6f0.jpg",
+        "alternativeText": null
+       },
+       "price": 13.99,
+       "locale": "fr",
+       "localeShareId": 44786,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3981",
+     "description": null,
+     "position": 7,
+     "name": "Mocktails",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "3981",
+     "description": null,
+     "position": 7,
+     "name": "Mocktails",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44787",
+       "description": "A creamy yogurt-based drink blended with ripe mangoes and a touch of sugar. Served chilled and refreshing.",
+       "handle": "mango-lasi",
+       "name": "Mango Lasi",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_073_f5c88c3c5d.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44787,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45624",
+       "description": "Une boisson onctueuse à base de yaourt, mélangée à des mangues et une touche de sucre. Servie fraîche et rafraîchissante.\n\n\n",
+       "handle": "mango-lasi",
+       "name": "Lassi mangue",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_073_f5c88c3c5d.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44787,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44788",
+       "description": "Crisp green apple flavor with a hint of citrus, sparkling fizz, and fruity jelly, served refreshingly chilled.",
+       "handle": "green-apple-mocktail",
+       "name": "Green Apple Mocktail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_099_1fd290b4ca.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44788,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45625",
+       "description": "Saveur de pomme verte croquante avec une pointe d'agrumes, de boisson pétillantes et une gelée de fruits, servie bien fraîche.\n\n\n",
+       "handle": "green-apple-mocktail",
+       "name": "Cocktail sans alcool à la pomme verte",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_099_1fd290b4ca.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44788,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44789",
+       "description": "Refreshing watermelon blended with mint and sparkle, finished with fruity jelly for a cool summer sip.",
+       "handle": "watermelon-mocktail",
+       "name": "Watermelon Mocktail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_032_5aed7d33e5.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44789,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45626",
+       "description": "Une pastèque rafraîchissante mélangée à de la menthe et des bulles, le tout agrémenté de gelée de fruits pour une gorgée estivale désaltérante.\n\n\n",
+       "handle": "watermelon-mocktail",
+       "name": "Cocktail sans alcool au melon d'eau",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_032_5aed7d33e5.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44789,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44790",
+       "description": "Juicy peach flavor with fresh mint, sparkling bubbles, and fruity jelly, perfectly refreshing.",
+       "handle": "peach-mocktail",
+       "name": "Peach Mocktail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_032_5aed7d33e5.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44790,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45627",
+       "description": "Un goût de pêche juteuse avec de la menthe fraîche, boisson pétillantes et gelées fruitée, parfaitement rafraîchissant.\n\n",
+       "handle": "peach-mocktail",
+       "name": "Cocktail sans alcool à la pêche",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_032_5aed7d33e5.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44790,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44791",
+       "description": "Smooth mango paired with fresh mint leaves, sparkling touch, and fruity jelly for a cool, tropical delight",
+       "handle": "mango-mocktail",
+       "name": "Mango Mocktail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_074_b6bac5ed60.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44791,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45628",
+       "description": "La mangue onctueuse avec menthe fraîche, boisson pétillante et une gelée fruitée pour un délice tropical rafraîchissant.\n\n",
+       "handle": "mango-mocktail",
+       "name": "Cocktail sans alcool à la mangue",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_074_b6bac5ed60.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44791,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44792",
+       "description": "Tropical pineapple fused with zesty citrus, bubbles, and fruity jelly, bright and refreshing\n\n",
+       "handle": "pineapple-mocktail",
+       "name": "Pineapple Mocktail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_074_b6bac5ed60.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44792,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45629",
+       "description": "Ananas tropical mêlé à des agrumes acidulés et une gelée de fruits, pour un résultat vif et rafraîchissant.\n\n",
+       "handle": "pineapple-mocktail",
+       "name": "Cocktail sans alcool à l'ananas",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_074_b6bac5ed60.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44792,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44793",
+       "description": "A fruity mix of ripe blueberries and citrus, topped with bubbles and fruity jelly for a refreshing sip",
+       "handle": "blueberry-mocktail",
+       "name": "Blueberry Mocktail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_068_15b11b3938.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44793,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45630",
+       "description": "Un mélange fruité de bleuets mûres et d'agrumes, agrémenté de bulles et de gelée de fruits pour une gorgée rafraîchissante.\n\n",
+       "handle": "blueberry-mocktail",
+       "name": "Cocktail sans alcool aux bleuets",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_068_15b11b3938.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44793,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44794",
+       "description": "Sweet strawberries blended with citrus notes, sparkling twist, and fruity jelly, served icy cold",
+       "handle": "strawberry-mocktail",
+       "name": "Strawberry Mocktail",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_017_da1fd36c21.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "en",
+       "localeShareId": 44794,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45631",
+       "description": "Des fraises sucrées mêlées à des notes d'agrumes, une touche pétillante et une gelée de fruits, servies glacées.\n\n",
+       "handle": "strawberry-mocktail",
+       "name": "Cocktail sans alcool aux fraises",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_017_da1fd36c21.jpg",
+        "alternativeText": null
+       },
+       "price": 7.99,
+       "locale": "fr",
+       "localeShareId": 44794,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3982",
+     "description": null,
+     "position": 8,
+     "name": "Desserts",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "3982",
+     "description": null,
+     "position": 8,
+     "name": "Desserts",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44795",
+       "description": "Indulge in our classic Tiramisu Cake, a rich layering of espresso-soaked ladyfingers, creamy mascarpone filling, and a light dusting of cocoa powder.",
+       "handle": "tiramisu-cake",
+       "name": "Tiramisu Cake",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_050_862f63713c.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "en",
+       "localeShareId": 44795,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45632",
+       "description": "Laissez\n\n",
+       "handle": "tiramisu-cake",
+       "name": "Gâteau Tiramisu",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_050_862f63713c.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "fr",
+       "localeShareId": 44795,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44796",
+       "description": "Experience the luxurious Cheese Ruby Cake, featuring velvety cream cheese layers with a vibrant ruby red glaze, perfect for a decadent treat.",
+       "handle": "ruby-cheese-cake",
+       "name": "Ruby Cheese Cake",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_079_90fedec653.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "en",
+       "localeShareId": 44796,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45633",
+       "description": "Découvrez le luxueux Cheese Ruby Cake, composé de couches onctueuses de fromage frais et d'un glaçage rouge rubis éclatant, parfait pour une pause gourmande.\n\n",
+       "handle": "ruby-cheese-cake",
+       "name": "Gâteau ruby au fromage",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_079_90fedec653.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "fr",
+       "localeShareId": 44796,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44797",
+       "description": "",
+       "handle": "double-chocolate-cake",
+       "name": "Double Chocolate Cake",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_018_6e842dcb61.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "en",
+       "localeShareId": 44797,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45634",
+       "description": "Un gâteau double chocolat riche et moelleux, garni d'un glaçage crémeux au chocolat pour un plaisir chocolaté ultime.\n\n",
+       "handle": "double-chocolate-cake",
+       "name": "Gâteau Double Chocolat",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_018_6e842dcb61.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "fr",
+       "localeShareId": 44797,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44798",
+       "description": "Light and airy mousse layers in flavors like chocolate or raspberry, garnished with fresh berries. Elegant and melt-in-your-mouth.",
+       "handle": "chocolate-mousse-cake",
+       "name": "Chocolate Mousse Cake",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_014_be7c40bf1b.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "en",
+       "localeShareId": 44798,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45635",
+       "description": "Un gâteau mousse au chocolat décadent, composé d'une mousse légère et à une base de chocolat riche et moelleuse, le tout recouvert d'un glaçage au chocolat lisse et brillant.\n\n",
+       "handle": "chocolate-mousse-cake",
+       "name": "Gâteau mousse au chocolat",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_014_be7c40bf1b.jpg",
+        "alternativeText": null
+       },
+       "price": 6.99,
+       "locale": "fr",
+       "localeShareId": 44798,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3983",
+     "description": null,
+     "position": 9,
+     "name": "Beverages",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4044",
+     "description": null,
+     "position": 9,
+     "name": "Boissons",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44799",
+       "description": "",
+       "handle": "water",
+       "name": "Water",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_065_ff658382f3.jpg",
+        "alternativeText": null
+       },
+       "price": 1.99,
+       "locale": "en",
+       "localeShareId": 44799,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45636",
+       "description": null,
+       "handle": "water",
+       "name": "Eau",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_065_ff658382f3.jpg",
+        "alternativeText": null
+       },
+       "price": 1.99,
+       "locale": "fr",
+       "localeShareId": 44799,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44800",
+       "description": "Carbonated natural spring water",
+       "handle": "sparkling-water",
+       "name": "Sparkling Water",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_033_3d36dd7ec0.jpg",
+        "alternativeText": null
+       },
+       "price": 3.99,
+       "locale": "en",
+       "localeShareId": 44800,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45637",
+       "description": null,
+       "handle": "sparkling-water",
+       "name": "Eau pétillante",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_033_3d36dd7ec0.jpg",
+        "alternativeText": null
+       },
+       "price": 3.99,
+       "locale": "fr",
+       "localeShareId": 44800,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44801",
+       "description": "soft drink",
+       "handle": "sprite",
+       "name": "Sprite",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_081_15abbaaedd.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44801,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45638",
+       "description": "boisson gazeuse\n\n",
+       "handle": "sprite",
+       "name": "Sprite",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_081_15abbaaedd.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44801,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44802",
+       "description": "Energy Drink",
+       "handle": "red-bull",
+       "name": "Red Bull",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_088_d749571420.jpg",
+        "alternativeText": null
+       },
+       "price": 4.99,
+       "locale": "en",
+       "localeShareId": 44802,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "44802",
+       "description": "Energy Drink",
+       "handle": "red-bull",
+       "name": "Red Bull",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_088_d749571420.jpg",
+        "alternativeText": null
+       },
+       "price": 4.99,
+       "locale": "en",
+       "localeShareId": 44802,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44803",
+       "description": "Soft Drink",
+       "handle": "pepsi",
+       "name": "Pepsi",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_015_af0a056445.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44803,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45639",
+       "description": "boisson gazeuse\n\n",
+       "handle": "pepsi",
+       "name": "Pepsi",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_015_af0a056445.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44803,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44804",
+       "description": "Real tea and zesty natural lemon flavour coming together to create an unbelievably bold and refreshing taste\n\n",
+       "handle": "fuze-iced-tea",
+       "name": "Fuze Iced Tea",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_049_c3d391ae23.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44804,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45640",
+       "description": "thé glacé\n\n",
+       "handle": "fuze-iced-tea",
+       "name": "Fuze",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_049_c3d391ae23.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44804,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44805",
+       "description": "Canada Dry Ginger Ale is an unparalleled classic",
+       "handle": "canada-dry-ginger-ale",
+       "name": "Canada Dry Ginger Ale",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_057_cfc8dd6d67.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44805,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45641",
+       "description": "Boisson gazeuse\n\n",
+       "handle": "canada-dry-ginger-ale",
+       "name": "Gingerale",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_057_cfc8dd6d67.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44805,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44806",
+       "description": "soft drinks\n\n",
+       "handle": "crush-(drink)",
+       "name": "Crush (drink)",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_054_e8dbc64d09.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44806,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45642",
+       "description": "Boisson gazeuse\n\n",
+       "handle": "crush-(drink)",
+       "name": "Crush",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_054_e8dbc64d09.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44806,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44807",
+       "description": "calorie-free soft drink.",
+       "handle": "coke-diet",
+       "name": "Coke Diet",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_010_c637a0fd10.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44807,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45643",
+       "description": "Boisson gazeuse\n\n",
+       "handle": "coke-diet",
+       "name": "Coke diète",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_010_c637a0fd10.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44807,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44808",
+       "description": "Soft Drink\n\n",
+       "handle": "coca-cola",
+       "name": "Coca Cola",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_006_a2433e5479.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44808,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45644",
+       "description": "Boisson gazeuse\n\n",
+       "handle": "coca-cola",
+       "name": "Coke",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_006_a2433e5479.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44808,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44809",
+       "description": "sugar-free version of Coca-Cola\n\n",
+       "handle": "coca-cola-zero",
+       "name": "Coca Cola Zero",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_058_940d970e61.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44809,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45645",
+       "description": "Boisson gazeuse\n\n",
+       "handle": "coca-cola-zero",
+       "name": "Coke zéro",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_058_940d970e61.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44809,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44810",
+       "description": "7UP® Zero Sugar",
+       "handle": "7up-zero",
+       "name": "7UP zero",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_048_a5b44a97bb.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44810,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45646",
+       "description": "Boisson gazeuse\n\n",
+       "handle": "7up-zero",
+       "name": "7up zéro",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_048_a5b44a97bb.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44810,
+       "availability": "available"
+      },
+      "modifiers": []
+     },
+     {
+      "en": {
+       "id": "44811",
+       "description": "soft drink",
+       "handle": "7up",
+       "name": "7up",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_097_d26b15201d.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "en",
+       "localeShareId": 44811,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45647",
+       "description": "Boisson gazeuse\n\n",
+       "handle": "7up",
+       "name": "7up",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_097_d26b15201d.jpg",
+        "alternativeText": null
+       },
+       "price": 2.99,
+       "locale": "fr",
+       "localeShareId": 44811,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   },
+   {
+    "en": {
+     "id": "3976",
+     "description": null,
+     "position": 10,
+     "name": "Kids Meals",
+     "photo": [],
+     "locale": "en",
+     "availability": "available"
+    },
+    "fr": {
+     "id": "4045",
+     "description": null,
+     "position": 10,
+     "name": "Repas Four Enfants",
+     "photo": [],
+     "locale": "fr",
+     "availability": "available"
+    },
+    "items": [
+     {
+      "en": {
+       "id": "44758",
+       "description": "",
+       "handle": "tenders-with-fries",
+       "name": "Tenders With Fries",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_086_0d1ded1951.jpg",
+        "alternativeText": null
+       },
+       "price": 9.99,
+       "locale": "en",
+       "localeShareId": 44758,
+       "availability": "available"
+      },
+      "fr": {
+       "id": "45648",
+       "description": null,
+       "handle": "tenders-with-fries",
+       "name": "Tenders avec frites",
+       "photo": {
+        "url": "https://betterresto.s3.us-west-1.wasabisys.com/production/13382/2025_10_27_00_20_50_086_0d1ded1951.jpg",
+        "alternativeText": null
+       },
+       "price": 9.99,
+       "locale": "fr",
+       "localeShareId": 44758,
+       "availability": "available"
+      },
+      "modifiers": []
+     }
+    ]
+   }
+  ]
+ }
+}

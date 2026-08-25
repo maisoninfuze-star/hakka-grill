@@ -1,0 +1,9 @@
+node_modules/
+.next/
+*.tsbuildinfo
+.DS_Store
+
+# Download cache for the 89 dish photographs (~42 MB). Not committed: the URLs
+# live in lib/menu-data.ts and `node build-dish-images.mjs` re-fetches anything
+# missing. The encoded output in public/img/dish IS committed — that is the site.
+src-assets/dish/

@@ -1,0 +1,777 @@
+/* ============================================================
+   Components. Loaded after globals.css.
+   ============================================================ */
+
+/* ---------------- buttons / links ---------------- */
+.btn {
+  --btn-fg: var(--bone);
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
+  padding: 0.82rem 1.5rem;
+  font-size: var(--t-small); font-weight: 600; letter-spacing: 0.045em; text-transform: uppercase;
+  color: var(--btn-fg); border: 1px solid transparent; border-radius: 999px;
+  cursor: pointer; overflow: hidden; isolation: isolate;
+  transition: color var(--d-fast) var(--e-out), border-color var(--d-fast) var(--e-out);
+  text-align: center;
+}
+.btn::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  transform: scaleY(0); transform-origin: bottom;
+  transition: transform var(--d-med) var(--e-out);
+}
+.btn:hover::before, .btn:focus-visible::before { transform: scaleY(1); }
+.btn--lg { padding: 1.02rem 1.9rem; }
+.btn--wide { width: 100%; }
+
+.btn--ember { background: var(--ember-cta); color: #fff; }
+.btn--ember::before { background: var(--ember-hi); }
+.btn--ember:hover, .btn--ember:focus-visible { color: #1a0b04; }
+
+.btn--outline { border-color: color-mix(in oklab, var(--bone) 34%, transparent); }
+.btn--outline::before { background: var(--bone); }
+.btn--outline:hover, .btn--outline:focus-visible { color: var(--ink); border-color: var(--bone); }
+
+.btn--ghost { color: var(--muted); }
+.btn--ghost::before { background: color-mix(in oklab, var(--bone) 10%, transparent); }
+.btn--ghost:hover, .btn--ghost:focus-visible { color: var(--bone); }
+
+/* animated underline */
+.link {
+  display: inline-block; position: relative; font-size: var(--t-small); font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase; color: var(--bone); padding-bottom: 0.3rem;
+}
+.link::after {
+  content: ''; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%;
+  background: var(--amber); transform: scaleX(0); transform-origin: right;
+  transition: transform var(--d-med) var(--e-out);
+}
+.link:hover::after, .link:focus-visible::after { transform: scaleX(1); transform-origin: left; }
+.link::before {
+  content: ''; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%;
+  background: var(--rule);
+}
+
+/* spice indicator */
+.heat { display: inline-flex; gap: 3px; margin-left: 0.55rem; vertical-align: 0.06em; }
+.heat__m { width: 4px; height: 11px; border-radius: 2px; background: color-mix(in oklab, var(--bone) 16%, transparent); }
+.heat__m.is-on { background: linear-gradient(to top, var(--chili), var(--ember)); }
+
+.price { font-size: 0.95rem; font-weight: 600; color: var(--bone); white-space: nowrap; }
+
+/* Opt-in fill: the picture matches its parent and the image covers it. */
+picture[data-fill] { height: 100%; }
+picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Line-mask utility: clips a text line so it can be wiped upward into place. */
+.mask { display: block; overflow: hidden; padding-bottom: 0.06em; }
+.mask > * { display: block; }
+
+/* ---------------- wordmark ---------------- */
+.wordmark {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-family: var(--display); font-weight: 600; letter-spacing: -0.03em;
+  font-size: clamp(1.08rem, 1.5vw, 1.34rem); line-height: 1;
+  transition: font-size var(--d-med) var(--e-out), gap var(--d-med) var(--e-out);
+}
+.wordmark__mark {
+  width: 2.15em; height: 2.15em; flex: none; border-radius: 50%;
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--bone) 12%, transparent),
+              0 2px 10px rgb(0 0 0 / 0.45);
+  transition: width var(--d-med) var(--e-out), height var(--d-med) var(--e-out);
+}
+.wordmark__type { display: inline-flex; align-items: baseline; gap: 0.3ch; }
+.wordmark--compact { font-size: clamp(0.98rem, 1.25vw, 1.14rem); gap: 0.5rem; }
+.wordmark--compact .wordmark__mark { width: 1.95em; height: 1.95em; }
+
+/* ---------------- intro ----------------
+   One-shot branded opening.
+
+   The RESTING state below is the finished lockup — emblem, name and rule all
+   visible. That is deliberate: a hidden or throttled tab pauses CSS animations,
+   so an overlay whose first keyframe is "black and empty" becomes a blank black
+   screen for as long as the freeze lasts. Resting on the finished frame means
+   the worst case is a logo on black, which reads as intentional.
+
+   The reveal is layered on by `.is-playing`, added only once the document is
+   actually visible. The exit is `.is-out`, a plain transition. */
+.intro {
+  position: fixed; inset: 0; z-index: 300;
+  display: grid; place-items: center;
+  background: var(--ink);
+  transition: opacity 0.45s var(--e-out);
+}
+.intro__lock {
+  display: grid; justify-items: center; gap: 0.9rem;
+  transition: transform 0.5s var(--e-out);
+}
+.intro__mark {
+  width: clamp(74px, 11vw, 104px); height: clamp(74px, 11vw, 104px);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--bone) 10%, transparent),
+              0 0 60px -10px color-mix(in oklab, var(--ember) 60%, transparent);
+}
+.intro__word {
+  display: inline-flex; align-items: baseline; gap: 0.34ch;
+  font-family: var(--display); font-weight: 600; letter-spacing: -0.03em;
+  font-size: clamp(1.9rem, 4.6vw, 3.1rem); line-height: 1;
+  /* Explicit, not `none`: a keyframe animating inset() towards `none` cannot be
+     interpolated, so the browser jumps discretely at the midpoint and the wipe
+     pops instead of sliding. inset(0 0 0 0) is the same thing visually. */
+  clip-path: inset(0 0 0 0);
+}
+.intro__g { color: var(--amber); }
+.intro__rule { width: clamp(5rem, 14vw, 9rem); height: 1px; background: var(--rule); }
+
+/* The reveal, applied only when the document can actually paint it. */
+.intro.is-playing .intro__mark { animation: introMark 0.62s var(--e-out) both; }
+.intro.is-playing .intro__word { animation: introWord 0.62s var(--e-out) 0.34s both; }
+.intro.is-playing .intro__rule { animation: introRule 0.5s var(--e-out) 0.62s both; }
+
+/* The exit. */
+.intro.is-out { opacity: 0; pointer-events: none; }
+.intro.is-out .intro__lock { transform: scale(1.06); }
+
+@keyframes introMark { from { opacity: 0; transform: scale(0.9); } }
+@keyframes introWord { from { clip-path: inset(0 0 100% 0); } }
+@keyframes introRule { from { width: 0; } }
+
+/* Already seen this session, or reduced motion. */
+.intro-done .intro { display: none; }
+@media (prefers-reduced-motion: reduce) { .intro { display: none; } }
+
+/* ---------------- header ---------------- */
+.hdr {
+  position: fixed; inset: 0 0 auto 0; z-index: 100;
+  /* Keeps nav legible while the bar is still transparent over the hero. */
+  background: linear-gradient(to bottom, color-mix(in oklab, var(--ink) 62%, transparent), transparent);
+  transition: background var(--d-med) var(--e-out), border-color var(--d-med) var(--e-out), backdrop-filter var(--d-med);
+  border-bottom: 1px solid transparent;
+}
+.hdr.is-solid {
+  background: color-mix(in oklab, var(--ink) 82%, transparent);
+  backdrop-filter: blur(14px) saturate(1.3);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  border-bottom-color: var(--rule-soft);
+}
+.hdr__in {
+  max-width: var(--maxw); margin-inline: auto; padding: 1.15rem var(--gut);
+  display: flex; align-items: center; gap: 1.5rem;
+  transition: padding var(--d-med) var(--e-out);
+}
+.hdr.is-solid .hdr__in { padding-block: 0.78rem; }
+.hdr__logo { flex: none; }
+.hdr__nav { display: flex; gap: 1.9rem; margin-inline: auto; }
+.navlink {
+  position: relative; display: inline-block; padding-block: 0.35rem;
+  font-size: var(--t-small); font-weight: 500; letter-spacing: 0.03em;
+  color: var(--muted); transition: color var(--d-fast);
+}
+.navlink::after {
+  content: ''; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%;
+  background: var(--amber); transform: scaleX(0); transform-origin: right;
+  transition: transform var(--d-med) var(--e-out);
+}
+.navlink:hover, .navlink:focus-visible, .navlink.is-current { color: var(--bone); }
+.navlink:hover::after, .navlink:focus-visible::after, .navlink.is-current::after { transform: scaleX(1); transform-origin: left; }
+
+.hdr__act { display: flex; align-items: center; gap: 0.7rem; flex: none; }
+.hdr__lang {
+  font-size: var(--t-micro); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); padding: 0.4rem 0.55rem; border: 1px solid var(--rule); border-radius: 999px;
+  transition: color var(--d-fast), border-color var(--d-fast);
+}
+.hdr__lang:hover, .hdr__lang:focus-visible { color: var(--bone); border-color: color-mix(in oklab, var(--bone) 34%, transparent); }
+
+.hdr__burger { display: none; background: none; border: 0; padding: 0.5rem; cursor: pointer; }
+.burger { display: block; width: 26px; height: 12px; position: relative; }
+.burger i {
+  position: absolute; left: 0; height: 1.5px; width: 100%; background: var(--bone);
+  transition: transform var(--d-med) var(--e-out), opacity var(--d-fast);
+}
+.burger i:first-child { top: 0; }
+.burger i:last-child { bottom: 0; width: 68%; }
+.burger.is-open i:first-child { transform: translateY(5px) rotate(45deg); }
+.burger.is-open i:last-child { width: 100%; transform: translateY(-5px) rotate(-45deg); }
+
+/* mobile panel */
+.mnav {
+  position: fixed; inset: 0; z-index: 99;
+  background: var(--ink); padding: 6.5rem var(--gut) 2rem;
+  display: flex; flex-direction: column; gap: 2rem;
+  opacity: 0; pointer-events: none;
+  transition: opacity var(--d-med) var(--e-out);
+}
+.mnav.is-open { opacity: 1; pointer-events: auto; }
+/* The `hidden` attribute maps to `display: none` in the UA stylesheet, and the
+   rule above outranks it — which left the closed panel in the accessibility
+   tree with focusable links, so desktop keyboard users tabbed into an invisible
+   menu. `pointer-events: none` does not stop focus; only removing the box does.
+   Trade-off: the close is instant rather than fading. Correctness wins. */
+.mnav[hidden] { display: none; }
+.mnav__act { display: grid; gap: 0.6rem; }
+.mnav nav { display: flex; flex-direction: column; border-top: 1px solid var(--rule); }
+.mnav__link {
+  display: flex; align-items: baseline; gap: 1rem; padding: 1.05rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--display); font-size: 1.7rem; letter-spacing: -0.02em;
+  opacity: 0; transform: translateY(14px);
+  transition: opacity var(--d-med) var(--e-out), transform var(--d-med) var(--e-out);
+}
+.mnav.is-open .mnav__link { opacity: 1; transform: none; }
+.mnav__i { font-family: var(--sans); font-size: var(--t-micro); color: var(--amber); letter-spacing: 0.1em; }
+.mnav__foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; font-size: var(--t-small); color: var(--muted); }
+.mnav__lang { border: 1px solid var(--rule); border-radius: 999px; padding: 0.45rem 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--t-micro); }
+
+/* sticky mobile conversion bar */
+.obar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
+  display: none; gap: 0.55rem; padding: 0.6rem var(--gut) calc(0.6rem + env(safe-area-inset-bottom));
+  background: color-mix(in oklab, var(--ink) 88%, transparent);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid var(--rule-soft);
+  transform: translateY(105%); transition: transform var(--d-med) var(--e-out);
+}
+.obar.is-in { transform: none; }
+.obar__b {
+  flex: 1; text-align: center; padding: 0.9rem 1rem; border-radius: 999px;
+  font-size: var(--t-small); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+}
+.obar__b--ember { background: var(--ember-cta); color: #fff; flex: 1.35; }
+.obar__b--ghost { border: 1px solid var(--rule); color: var(--bone); }
+
+/* ---------------- hero ---------------- */
+.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; overflow: clip; }
+.hero__media { position: absolute; inset: 0; z-index: -2; }
+.hero__img, .hero__media img { width: 100%; height: 100%; object-fit: cover; }
+/* Night grade.
+   The filter lives on <picture>, which is never transformed — the <img> inside
+   it is what scales on scroll. A filter creates a rasterization layer, so
+   putting it on the same element that scales makes the browser rasterize first
+   and scale the bitmap up afterwards: visibly soft. Filter the still parent,
+   transform the child, and it stays sharp. */
+.hero__media picture { filter: brightness(0.9) saturate(1.14) contrast(1.05); }
+.hero__img, .hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.hero__grade {
+  position: absolute; inset: 0;
+  /* Tuned for the room: already a dark, warm, chandelier-lit interior, so the
+     grade barely touches it and the left wash only protects the headline. */
+  background:
+    linear-gradient(to top, var(--ink) 2%, color-mix(in oklab, var(--ink) 82%, transparent) 28%, color-mix(in oklab, var(--ink) 38%, transparent) 62%, transparent),
+    linear-gradient(to right, color-mix(in oklab, var(--ink) 88%, transparent) 6%, color-mix(in oklab, var(--ink) 46%, transparent) 42%, transparent 72%),
+    radial-gradient(100% 80% at 78% 20%, color-mix(in oklab, var(--ember) 16%, transparent), transparent 64%),
+    radial-gradient(130% 100% at 50% 50%, transparent 48%, color-mix(in oklab, var(--ink) 48%, transparent));
+}
+.hero__veil { position: absolute; inset: 0; background: var(--ink); opacity: 0; }
+.hero__in { position: relative; width: 100%; padding-bottom: clamp(2rem, 4.5vh, 3.4rem); padding-top: 7rem; }
+.hero__mark { margin-bottom: 1.15rem; }
+.hero__h { font-size: var(--t-hero); margin-bottom: 1.25rem; max-width: 15ch; }
+.hero__line { display: block; overflow: hidden; padding-bottom: 0.06em; }
+.hero__line > span { display: block; }
+.hero__line:nth-child(2) > span { color: var(--amber); }
+.hero__lede { margin-bottom: 1.8rem; max-width: 40ch; color: color-mix(in oklab, var(--bone) 76%, transparent); }
+.hero__ctas { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.hero__meta {
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem;
+  margin-top: clamp(1.8rem, 4vh, 3rem); padding-top: 1.1rem; border-top: 1px solid var(--rule-soft);
+}
+.hero__addr { display: grid; font-size: var(--t-small); color: var(--muted); line-height: 1.45; }
+.hero__addr span:first-child { color: var(--bone); }
+.hero__addr:hover span:first-child { color: var(--amber); }
+.hero__scroll {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: var(--t-micro); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+}
+.hero__scroll i { display: block; width: 34px; height: 1px; background: var(--rule); position: relative; overflow: hidden; }
+.hero__scroll i::after {
+  content: ''; position: absolute; inset: 0; background: var(--amber);
+  /* Finite on purpose: a cue that loops forever is noise, and an endless
+     compositor animation keeps the page from ever going idle. */
+  animation: scrollcue 2.4s var(--e-io) 3;
+}
+@keyframes scrollcue { 0% { transform: translateX(-100%); } 55%,100% { transform: translateX(100%); } }
+
+/* ---------------- marquee ---------------- */
+.mq { overflow: hidden; padding-block: clamp(1.6rem, 3.4vw, 2.8rem); border-block: 1px solid var(--rule-soft); }
+.mq__track { display: flex; width: max-content; }
+.mq__half { display: flex; }
+.mq__w {
+  display: inline-flex; align-items: center;
+  font-family: var(--display); font-size: clamp(1.5rem, 3.4vw, 3rem); font-weight: 500;
+  letter-spacing: -0.02em; color: color-mix(in oklab, var(--bone) 34%, transparent);
+  white-space: nowrap;
+}
+.mq__w:nth-child(3n+2) { color: color-mix(in oklab, var(--amber) 62%, transparent); }
+.mq__sep { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--ember); margin-inline: clamp(1.1rem, 2.6vw, 2.4rem); flex: none; }
+
+/* ---------------- signatures ---------------- */
+.sig__head { max-width: 52rem; margin-bottom: clamp(2.5rem, 6vw, 4.5rem); }
+.sig__h { font-size: var(--t-h1); margin-block: 1rem 1.4rem; }
+.sig__body { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.sig__list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
+.sig__list li { border-bottom: 1px solid var(--rule); }
+.sig__item {
+  width: 100%; display: grid; grid-template-columns: auto 1fr auto; align-items: baseline; gap: 1rem;
+  padding: 1.5rem 0; background: none; border: 0; cursor: pointer; text-align: left;
+  transition: padding-left var(--d-med) var(--e-out);
+}
+.sig__item:hover, .sig__item.is-active { padding-left: 0.8rem; }
+.sig__n { font-size: var(--t-micro); color: var(--amber); letter-spacing: 0.1em; }
+.sig__name {
+  font-size: clamp(1.28rem, 2.5vw, 2.05rem); line-height: 1.06;
+  color: color-mix(in oklab, var(--bone) 52%, transparent);
+  transition: color var(--d-med) var(--e-out);
+}
+.sig__item:hover .sig__name, .sig__item.is-active .sig__name, .sig__item:focus-visible .sig__name { color: var(--bone); }
+.sig__meta { display: inline-flex; align-items: center; gap: 0.7rem; }
+/* grid-template-rows 0fr -> 1fr expands to the content's real height without
+   guessing a max-height, and without animating `height` directly. */
+.sig__descwrap {
+  display: grid; grid-template-rows: 0fr; opacity: 0;
+  transition: grid-template-rows var(--d-med) var(--e-out), opacity var(--d-med) var(--e-out);
+}
+.sig__desc { font-size: 0.92rem; color: var(--muted); max-width: 46ch; overflow: hidden; min-height: 0; }
+.sig__list li:has(.is-active) .sig__descwrap { grid-template-rows: 1fr; opacity: 1; padding-bottom: 1.4rem; }
+
+.sig__stage {
+  position: sticky; top: 7rem; aspect-ratio: 5 / 4; border-radius: 2px; overflow: hidden;
+  background: var(--ink-2);
+}
+.sig__layer { position: absolute; inset: 0; }
+.sig__layer img, .sig__img { width: 100%; height: 100%; object-fit: cover; }
+/* These dishes were photographed on white marble under flat light. A vignette
+   plus a touch of warmth seats them in the dark page without dulling the food —
+   the plate stops reading as a lit rectangle pasted onto black. */
+.sig__stage img, .sig__cardimg img { filter: saturate(1.12) contrast(1.04) brightness(0.97); }
+.sig__stagegrade {
+  position: absolute; inset: 0; z-index: 3; pointer-events: none;
+  background:
+    linear-gradient(to top, color-mix(in oklab, var(--ink) 62%, transparent), transparent 40%),
+    radial-gradient(115% 85% at 50% 45%, transparent 42%, color-mix(in oklab, var(--ink) 58%, transparent));
+}
+.sig__rail { display: none; }
+.sig__cta { margin-top: clamp(2rem, 5vw, 3.5rem); }
+
+/* ---------------- craft (CSS sticky, not a GSAP pin) ---------------- */
+.craft { position: relative; height: 180svh; background: var(--ink-2); }
+.craft__stick {
+  position: sticky; top: 0; min-height: 88svh;
+  display: grid; align-items: center; overflow: clip;
+}
+.craft__glow {
+  position: absolute; top: 50%; left: 68%; translate: -50% -50%;
+  width: min(80vw, 46rem); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in oklab, var(--ember) 34%, transparent), transparent 62%);
+  filter: blur(50px); pointer-events: none;
+}
+/* Two columns so the typography sits beside the dish, never on top of it. */
+.craft__grid {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1.06fr 0.94fr;
+  gap: clamp(1.5rem, 5vw, 4.5rem); align-items: center;
+  padding-block: clamp(3rem, 8vh, 6rem);
+}
+.craft__words { display: grid; gap: 0.06em; font-size: clamp(2.3rem, 5.6vw, 4.9rem); }
+.craft__w { display: block; }
+.craft__w--1 { color: var(--ember-hi); }
+.craft__w--3 { color: var(--amber); }
+.craft__body { margin-top: 1.9rem; max-width: 42ch; color: var(--muted); font-size: var(--t-lede); line-height: 1.55; }
+.craft__plate {
+  justify-self: center; width: min(100%, 23rem); aspect-ratio: 1;
+  border-radius: 50%; overflow: hidden;
+  box-shadow: 0 60px 130px -45px rgb(0 0 0 / 0.9),
+              0 0 0 1px color-mix(in oklab, var(--bone) 8%, transparent);
+}
+.craft__plate img { filter: saturate(1.15) contrast(1.05); }
+
+/* ---------------- story ---------------- */
+.story__grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+.story__media { position: relative; }
+.plx { overflow: hidden; border-radius: 2px; }
+.story__img, .story__media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.story__media::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(110% 80% at 50% 45%, transparent 46%, color-mix(in oklab, var(--ink) 48%, transparent));
+}
+.story__tag {
+  position: absolute; left: -0.6rem; bottom: 1.6rem;
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-size: var(--t-micro); letter-spacing: 0.24em; text-transform: uppercase; color: var(--amber);
+}
+.story__h { display: grid; gap: 0.02em; margin-block: 1rem 1.8rem; font-size: var(--t-h2); }
+.story__accent { color: var(--amber); }
+.story__p { color: var(--muted); margin-bottom: 1.1rem; max-width: 52ch; }
+.story__copy .link { margin-top: 0.8rem; }
+
+/* ---------------- menu discovery ---------------- */
+.disc { background: var(--ink-2); }
+.disc__head { max-width: 52rem; }
+.disc__h { font-size: var(--t-h1); margin-block: 1rem 1.4rem; }
+.disc__tabs {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  margin-block: clamp(2rem, 5vw, 3.2rem) 2rem;
+  padding-bottom: 0.2rem;
+}
+.disc__tab {
+  padding: 0.55rem 1.05rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--rule); background: none; color: var(--muted);
+  font-size: var(--t-small); font-weight: 500; white-space: nowrap;
+  transition: color var(--d-fast), border-color var(--d-fast), background var(--d-fast);
+}
+.disc__tab:hover { color: var(--bone); border-color: color-mix(in oklab, var(--bone) 30%, transparent); }
+.disc__tab.is-on { background: var(--bone); border-color: var(--bone); color: var(--ink); }
+
+/* ---------- dish card ----------
+   One card system shared by the homepage discovery grid and the full menu, so
+   a dish looks the same wherever it appears. */
+.mpg__grid {
+  display: grid; gap: clamp(1.1rem, 2.4vw, 1.9rem);
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+/* The homepage shows exactly six; three across gives two full rows instead of
+   a ragged 4+2. The full menu keeps auto-fill, where row length varies anyway. */
+@media (min-width: 1080px) {
+  .disc .mpg__grid { grid-template-columns: repeat(3, 1fr); }
+}
+.dcard { display: grid; grid-template-rows: auto 1fr; gap: 0.85rem; }
+.dcard__img {
+  aspect-ratio: 5 / 4; overflow: hidden; border-radius: 2px;
+  background: var(--ink-2);
+}
+.dcard__img img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(1.08) contrast(1.03);
+  transition: transform var(--d-slow) var(--e-out);
+}
+.dcard:hover .dcard__img img { transform: scale(1.04); }
+.dcard__body { display: grid; align-content: start; gap: 0.35rem; }
+.dcard__name {
+  font-family: var(--display); font-size: 1.12rem; font-weight: 500;
+  letter-spacing: -0.015em; line-height: 1.25;
+}
+.dcard__d { font-size: 0.87rem; color: var(--muted); line-height: 1.5; }
+.dcard__foot { margin-top: 0.35rem; }
+
+.disc__more { margin-top: 1.1rem; font-size: var(--t-small); color: var(--muted); }
+.disc__cta { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: clamp(2rem, 5vw, 3rem); }
+
+/* ---------------- halal ---------------- */
+.halal { text-align: center; }
+.halal__type { display: grid; gap: 0; }
+.halal__big { display: block; font-size: var(--t-hero); font-weight: 700; }
+.halal__big--out {
+  color: transparent;
+  -webkit-text-stroke: 1.5px color-mix(in oklab, var(--amber) 78%, transparent);
+  paint-order: stroke fill;
+}
+.halal__foot {
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 4rem);
+  text-align: left; max-width: 62rem; margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+  padding-top: 2rem; border-top: 1px solid var(--rule);
+}
+.halal__h { font-size: var(--t-h2); }
+.halal__p { color: var(--muted); margin-bottom: 1rem; }
+.halal__note { color: var(--amber); font-size: 0.95rem; }
+
+/* ---------------- experience ---------------- */
+.exp__top { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(1.5rem, 5vw, 5rem); align-items: end; margin-bottom: clamp(2.5rem, 6vw, 4rem); }
+.exp__h { font-size: var(--t-h1); margin-top: 1rem; }
+.exp__side .link { margin-top: 1.4rem; }
+/* Contained, not full-bleed: the room is shown inside the same column as the
+   rest of the page so it reads as a plate on the page, not a takeover. */
+.exp__wide {
+  position: relative; overflow: hidden; border-radius: 2px;
+  max-width: var(--maxw); margin-inline: auto;
+  margin-left: max(var(--gut), calc((100vw - var(--maxw)) / 2 + var(--gut)));
+  margin-right: max(var(--gut), calc((100vw - var(--maxw)) / 2 + var(--gut)));
+}
+/* Height lives on the frame, not the image: the image opts into `fill`, and a
+   percentage height on it can only resolve against a parent that has one. */
+.exp__wide { height: clamp(14rem, 34vh, 22rem); }
+.exp__wide .plx { height: 100%; }
+.exp__wide img { width: 100%; height: 100%; object-fit: cover; }
+.exp__grade {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to bottom, color-mix(in oklab, var(--ink) 50%, transparent), transparent 30%, transparent 68%, color-mix(in oklab, var(--ink) 70%, transparent));
+}
+
+/* ---------------- gallery ---------------- */
+.gal__head { max-width: 48rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.gal__h { font-size: var(--t-h1); margin-block: 1rem 1.2rem; }
+.gal__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(0.6rem, 1.4vw, 1.1rem); }
+.gal__cell { position: relative; overflow: hidden; border-radius: 2px; background: var(--ink-2); }
+.gal__cell--0 { grid-column: span 2; }
+.gal__cell--3 { grid-row: span 2; }
+.gal__btn { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.gal__btn picture, .gal__btn img { width: 100%; height: 100%; object-fit: cover; }
+.gal__btn img { transition: transform var(--d-slow) var(--e-out), filter var(--d-slow) var(--e-out); filter: brightness(0.88); }
+.gal__btn:hover img, .gal__btn:focus-visible img { transform: scale(1.04); filter: brightness(1); }
+.gal__scrim { position: absolute; inset: 0; background: linear-gradient(to top, color-mix(in oklab, var(--ink) 45%, transparent), transparent 45%); pointer-events: none; }
+
+/* lightbox */
+.lb {
+  position: fixed; inset: 0; z-index: 200; display: grid; place-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: color-mix(in oklab, var(--ink) 94%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  animation: lbin var(--d-med) var(--e-out);
+}
+@keyframes lbin { from { opacity: 0; } to { opacity: 1; } }
+.lb__back { position: absolute; inset: 0; background: none; border: 0; cursor: zoom-out; }
+.lb__inner { position: relative; max-width: min(94vw, 72rem); max-height: 86svh; display: grid; gap: 0.9rem; }
+.lb__inner img { max-height: 78svh; width: auto; margin-inline: auto; object-fit: contain; border-radius: 2px; }
+.lb__cap { font-size: var(--t-small); color: var(--muted); text-align: center; max-width: 60ch; margin-inline: auto; }
+.lb__nav, .lb__x {
+  position: absolute; z-index: 2; background: color-mix(in oklab, var(--bone) 8%, transparent);
+  border: 1px solid var(--rule); color: var(--bone); border-radius: 999px; cursor: pointer;
+  display: grid; place-items: center; transition: background var(--d-fast);
+}
+.lb__nav { top: 50%; transform: translateY(-50%); width: 3rem; height: 3rem; font-size: 1.7rem; line-height: 1; }
+.lb__nav--prev { left: clamp(0.5rem, 2vw, 2rem); }
+.lb__nav--next { right: clamp(0.5rem, 2vw, 2rem); }
+.lb__x { top: clamp(0.8rem, 2vw, 1.6rem); right: clamp(0.8rem, 2vw, 1.6rem); width: 2.6rem; height: 2.6rem; font-size: 1.5rem; }
+.lb__nav:hover, .lb__x:hover { background: color-mix(in oklab, var(--bone) 18%, transparent); }
+
+/* ---------------- reserve ----------------
+   Was a full-screen photograph with type over it. Now a contained panel: the
+   photograph is a quiet backdrop inside a bordered block rather than another
+   full-viewport image competing with the hero. */
+.rsv { padding-block: var(--sec); }
+.rsv__panel {
+  position: relative; overflow: hidden; border-radius: 3px;
+  border: 1px solid var(--rule);
+  display: grid; place-items: center; text-align: center;
+  padding: clamp(2.6rem, 7vw, 5rem) clamp(1.2rem, 5vw, 3rem);
+  isolation: isolate;
+}
+.rsv__media { position: absolute; inset: 0; z-index: -1; }
+.rsv__media img { width: 100%; height: 100%; object-fit: cover; }
+.rsv__grade {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, color-mix(in oklab, var(--ink) 82%, transparent), color-mix(in oklab, var(--ink) 90%, transparent)),
+    radial-gradient(80% 70% at 50% 45%, color-mix(in oklab, var(--navy) 38%, transparent), transparent 72%);
+}
+.rsv__in { position: relative; max-width: 46rem; }
+.rsv__h { display: grid; margin-block: 0.9rem 1.2rem; font-size: var(--t-h1); }
+.rsv__accent { color: var(--amber); }
+.rsv__p { margin-inline: auto; margin-bottom: 1.9rem; }
+.rsv__ctas { display: flex; flex-wrap: wrap; gap: 0.7rem; justify-content: center; }
+.rsv__tel { letter-spacing: 0.02em; text-transform: none; opacity: 0.9; }
+.rsv__note { margin-top: 1.4rem; font-size: var(--t-small); color: var(--muted); }
+
+/* ---------------- visit ---------------- */
+.vis__head { margin-bottom: clamp(2.2rem, 5vw, 3.6rem); }
+.vis__h { font-size: var(--t-h1); margin-top: 1rem; }
+.vis__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); }
+.vis__lbl { font-size: var(--t-micro); letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); margin-bottom: 1rem; }
+.vis__addr { font-style: normal; font-family: var(--display); font-size: clamp(1.3rem, 2.4vw, 1.9rem); line-height: 1.3; letter-spacing: -0.02em; }
+.vis__acts { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.6rem; }
+.vis__map { margin-top: clamp(3rem, 7vw, 5rem); }
+
+/* hours */
+.hrs__badge { display: inline-flex; align-items: center; gap: 0.5rem; font-size: var(--t-small); color: var(--muted); margin-bottom: 1rem; }
+.hrs__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--smoke); flex: none; }
+.hrs__badge.is-open { color: var(--bone); }
+.hrs__badge.is-open .hrs__dot { background: #4ADE80; box-shadow: 0 0 0 4px color-mix(in oklab, #4ADE80 20%, transparent); }
+.hrs__til { color: var(--muted); }
+.hrs__list { display: grid; gap: 0; }
+.hrs__row { display: flex; justify-content: space-between; gap: 1rem; padding-block: 0.52rem; border-bottom: 1px solid var(--rule-soft); font-size: 0.93rem; }
+.hrs__row dt { color: var(--muted); }
+.hrs__row.is-today dt, .hrs__row.is-today dd { color: var(--bone); font-weight: 600; }
+.hrs__row.is-closed dd { color: var(--smoke); }
+.hrs--compact .hrs__row { font-size: var(--t-small); padding-block: 0.34rem; }
+
+/* map */
+.map { position: relative; }
+.map__frame { width: 100%; height: clamp(20rem, 52vh, 34rem); border: 0; filter: invert(0.92) hue-rotate(180deg) saturate(0.5) brightness(0.95) contrast(0.95); }
+.map__facade {
+  position: relative; width: 100%; height: clamp(20rem, 52vh, 34rem);
+  border: 1px solid var(--rule); border-radius: 2px; cursor: pointer;
+  background: linear-gradient(160deg, var(--navy-2), var(--ink) 62%);
+  display: grid; place-items: center; overflow: hidden;
+}
+.map__grid {
+  position: absolute; inset: -20%;
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--bone) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--bone) 5%, transparent) 1px, transparent 1px);
+  background-size: 58px 58px;
+  transform: rotate(-14deg);
+}
+.map__pin { position: absolute; top: 42%; display: grid; place-items: center; }
+.map__dot { width: 12px; height: 12px; border-radius: 50%; background: var(--ember); box-shadow: 0 0 0 4px color-mix(in oklab, var(--ember) 25%, transparent); }
+.map__pulse {
+  position: absolute; width: 12px; height: 12px; border-radius: 50%;
+  border: 1px solid var(--ember); animation: pulse 2.6s var(--e-io) 3;
+}
+.map__facade:hover .map__pulse, .map__facade:focus-visible .map__pulse { animation-iteration-count: 3; }
+@keyframes pulse { 0% { transform: scale(1); opacity: 0.9; } 100% { transform: scale(5.5); opacity: 0; } }
+.map__copy { position: relative; display: grid; gap: 0.35rem; text-align: center; margin-top: 6rem; }
+.map__street { font-size: clamp(1.3rem, 2.6vw, 2rem); letter-spacing: -0.02em; }
+.map__city { font-size: var(--t-small); color: var(--muted); }
+.map__load { margin-top: 0.9rem; font-size: var(--t-micro); letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); }
+.map__out {
+  position: absolute; right: 1rem; bottom: 1rem; z-index: 2;
+  font-size: var(--t-micro); letter-spacing: 0.1em; text-transform: uppercase;
+  background: color-mix(in oklab, var(--ink) 82%, transparent); backdrop-filter: blur(8px);
+  border: 1px solid var(--rule); border-radius: 999px; padding: 0.5rem 0.9rem; color: var(--bone);
+}
+.map__out:hover { border-color: var(--amber); color: var(--amber); }
+
+/* ---------------- page heads ---------------- */
+.phead { position: relative; min-height: 66svh; display: flex; align-items: flex-end; overflow: clip; }
+.phead__media { position: absolute; inset: 0; }
+.phead__media picture { filter: brightness(0.5) saturate(1.2) contrast(1.08); }
+.phead__media img { width: 100%; height: 100%; object-fit: cover; }
+.phead__grade {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, var(--ink) 2%, color-mix(in oklab, var(--ink) 80%, transparent) 40%, color-mix(in oklab, var(--ink) 50%, transparent)),
+    linear-gradient(to right, color-mix(in oklab, var(--ink) 78%, transparent) 6%, transparent 68%),
+    radial-gradient(120% 90% at 50% 50%, transparent 40%, color-mix(in oklab, var(--ink) 55%, transparent));
+}
+.phead__in { position: relative; padding-block: 9rem clamp(2.5rem, 6vh, 4rem); }
+.phead__h { font-size: var(--t-h1); margin-block: 1rem 1.2rem; max-width: 18ch; }
+.phead__lede { max-width: 48ch; }
+
+/* ---------------- menu page ---------------- */
+.mpg { padding-block: clamp(3rem, 8vw, 6rem); }
+.mpg__jump { position: sticky; top: 5rem; z-index: 20; margin-bottom: clamp(2.5rem, 6vw, 4rem);
+  background: color-mix(in oklab, var(--ink) 90%, transparent); backdrop-filter: blur(10px);
+  padding-block: 0.9rem; border-bottom: 1px solid var(--rule-soft); }
+.mpg__jumplbl { font-size: var(--t-micro); letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); }
+.mpg__jump ul { display: flex; flex-wrap: wrap; gap: 0.3rem 0.75rem; margin-top: 0.6rem; padding: 0; margin-inline-start: -0.35rem; }
+/* padding-inline as well as -block: short labels ("Riz") were 19px wide and
+   failed the 24px minimum on their own. The list gap shrinks to match so the
+   row looks unchanged. */
+.mpg__jumpl { display: inline-block; padding: 0.4rem 0.35rem; font-size: var(--t-small); color: var(--muted); }
+.mpg__jumpl:hover { color: var(--bone); }
+.mpg__sec { margin-bottom: clamp(3rem, 7vw, 5rem); scroll-margin-top: 11rem; }
+.mpg__sechead { display: flex; align-items: baseline; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rule); margin-bottom: 0.4rem; }
+.mpg__sech { font-size: var(--t-h2); }
+.mpg__count { margin-left: auto; font-size: var(--t-micro); color: var(--amber); letter-spacing: 0.12em; }
+.mpg__note { margin-top: 2rem; font-size: var(--t-small); color: var(--muted); }
+.mpg__cta { margin-top: 2.5rem; }
+
+/* ---------------- story page ---------------- */
+.spg { padding-block: clamp(3rem, 8vw, 6rem); }
+.spg__body { max-width: 44rem; margin-inline: auto; }
+.spg__lead { font-family: var(--display); font-size: clamp(1.3rem, 2.6vw, 1.85rem); line-height: 1.34; letter-spacing: -0.02em; margin-bottom: 1.6rem; }
+.spg__p { color: var(--muted); margin-bottom: 1.2rem; }
+.spg__fig { margin-top: clamp(3rem, 7vw, 5rem); }
+.spg__fig img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.spg__cap { margin-top: 0.8rem; font-size: var(--t-small); color: var(--muted); }
+
+/* ---------------- footer ---------------- */
+.ftr { padding-top: clamp(3.5rem, 8vw, 6rem); border-top: 1px solid var(--rule); overflow: clip; }
+.ftr__grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(2rem, 6vw, 5rem); }
+.ftr__nav { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.ftr__col { display: grid; gap: 0.1rem; align-content: start; margin: 0; }
+.ftr__l { display: block; padding-block: 0.42rem; font-size: 0.95rem; color: var(--muted); transition: color var(--d-fast); }
+.ftr__l:hover, .ftr__l:focus-visible { color: var(--amber); }
+.ftr__info { display: grid; gap: 1.6rem; align-content: start; }
+.ftr__addr { font-style: normal; font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
+.ftr__tel { display: inline-flex; align-items: center; min-height: 26px; color: var(--bone); }
+.ftr__big {
+  display: flex; justify-content: space-between; gap: 2vw;
+  margin-top: clamp(3rem, 8vw, 6rem); padding-inline: var(--gut);
+  font-family: var(--display); font-weight: 700; line-height: 0.8;
+  font-size: clamp(3.6rem, 19.5vw, 19rem); letter-spacing: -0.045em;
+  color: color-mix(in oklab, var(--bone) 9%, transparent);
+  user-select: none; white-space: nowrap;
+}
+.ftr__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.6rem; padding-block: 1.6rem; border-top: 1px solid var(--rule-soft); margin-top: 1.5rem; }
+.ftr__fine { font-size: var(--t-micro); color: var(--smoke); letter-spacing: 0.02em; }
+
+/* ---------------- 404 ---------------- */
+.nf { min-height: 78svh; display: grid; place-items: center; text-align: center; padding-block: 8rem 4rem; }
+.nf__h { font-size: var(--t-h1); margin-block: 1rem; }
+.nf .lede { margin-inline: auto; margin-bottom: 2rem; }
+
+/* ============================================================
+   RESPONSIVE — mobile is designed, not shrunk
+   ============================================================ */
+@media (max-width: 1024px) {
+  .hdr__nav { display: none; }
+  .hdr__burger { display: block; }
+  .hdr__reserve { display: none; }
+  .hdr__act { margin-left: auto; }
+
+  .sig__body { grid-template-columns: 1fr; }
+  .sig__list, .sig__stage { display: none; }
+  /* The rail scrolls itself, but without this the section still reports the
+     rail's full scroll width and the whole PAGE slides sideways ~1285px on a
+     phone. Clipping the section contains it; the rail keeps its own scrolling.
+     Scoped to this breakpoint on purpose — a clip on .sig at desktop would
+     become the scroll container for the sticky dish stage and break it. */
+  .sig { overflow-x: clip; }
+  .sig__rail {
+    display: flex; gap: 1rem; overflow-x: auto; padding: 0 var(--gut) 1rem;
+    scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .sig__rail::-webkit-scrollbar { display: none; }
+  .sig__card { flex: 0 0 78vw; max-width: 24rem; scroll-snap-align: center; }
+  .sig__cardimg { aspect-ratio: 5 / 4; overflow: hidden; border-radius: 2px; background: var(--ink-2); }
+  .sig__cardimg img { width: 100%; height: 100%; object-fit: cover; }
+  .sig__cardname { font-size: 1.35rem; margin-top: 0.9rem; }
+  .sig__carddesc { font-size: 0.88rem; color: var(--muted); margin-top: 0.4rem; }
+  .sig__cardfoot { display: flex; align-items: center; gap: 0.7rem; margin-top: 0.7rem; }
+
+  .story__grid, .exp__top, .vis__grid, .halal__foot, .ftr__grid { grid-template-columns: 1fr; }
+  .craft { height: auto; }
+  .craft__stick { position: static; min-height: 0; padding-block: var(--sec); }
+  .craft__grid { grid-template-columns: 1fr; text-align: center; }
+  .craft__copy { order: 2; }
+  .craft__plate { order: 1; width: min(72vw, 22rem); margin-bottom: 2rem; }
+  .craft__body { margin-inline: auto; }
+  .craft__glow { left: 50%; top: 32%; }
+  .story__media { order: -1; }
+  .gal__grid { grid-template-columns: repeat(2, 1fr); }
+  .gal__cell--0 { grid-column: span 2; }
+  .gal__cell--3 { grid-row: auto; }
+  .obar { display: flex; }
+  body { padding-bottom: 0; }
+
+  /* Touch targets. Footer links render ~18px tall from their line-box alone,
+     under the 24px WCAG 2.5.8 minimum and well under a comfortable thumb.
+     Padding does the work and the column gap goes to zero so the targets sit
+     flush — no dead strips between them to mis-tap. */
+  .ftr__col { gap: 0; }
+  .ftr__l { display: block; padding-block: 0.7rem; }
+  .ftr__tel, .mnav__tel { display: inline-flex; align-items: center; min-height: 44px; }
+  .map__out { padding: 0.7rem 1rem; }
+  .mnav__lang { padding: 0.7rem 1rem; }
+  .mpg__jumpl { padding-block: 0.6rem; }
+  .mpg__jump ul { gap: 0.15rem 0.7rem; }
+}
+
+@media (max-width: 640px) {
+  /* 11.5px is too small for a label someone reads standing on a street corner. */
+  :root { --t-micro: 0.78rem; }
+
+  /* The outlined treatment needs size to work. At phone scale a 1.5px stroke on
+     ~40px type reads as a smudge, so "Halal" goes solid. */
+  .halal__big--out { color: var(--amber); -webkit-text-stroke: 0; }
+
+  /* Logo + burger only: the language pill and Order button do not fit beside
+     them at 375px. Ordering stays one tap away throughout — the hero has its
+     own Order/Reserve pair, the sticky bar takes over the moment the hero
+     leaves, and both sit at the top of the nav panel. Nothing is buried. */
+  .hdr__lang, .hdr__act > .btn--ember { display: none; }
+  .hdr__in { gap: 1rem; }
+
+  .gal__grid { grid-template-columns: 1fr; }
+  .gal__cell { grid-column: auto !important; aspect-ratio: 4 / 3 !important; }
+  .hero__meta { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+  .hero__scroll { display: none; }
+  .disc__row, .mpg__row { grid-template-columns: minmax(0, 1fr) auto; }
+  .disc__dots, .mpg__dots { display: none; }
+  .ftr__nav { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+  .lb__nav { width: 2.6rem; height: 2.6rem; }
+  .rsv__ctas .btn { width: 100%; }
+}
+
+/* Hover-capable pointers only: never leave a phone stuck in a hover state. */
+@media (hover: none) {
+  .btn::before { display: none; }
+  .gal__btn img { filter: none; }
+}

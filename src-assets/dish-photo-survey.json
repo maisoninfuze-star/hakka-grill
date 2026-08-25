@@ -1,0 +1,892 @@
+[
+ {
+  "id": "p00",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 133,
+  "border": 136,
+  "name": "Chicken Corn Soup (L)",
+  "uses": 1
+ },
+ {
+  "id": "p01",
+  "w": 480,
+  "h": 640,
+  "ar": 0.75,
+  "mean": 92,
+  "border": 78,
+  "name": "Honey Garlic Fries",
+  "uses": 1
+ },
+ {
+  "id": "p02",
+  "w": 4246,
+  "h": 1626,
+  "ar": 2.61,
+  "mean": 175,
+  "border": 182,
+  "name": "Spring Rolls",
+  "uses": 1
+ },
+ {
+  "id": "p03",
+  "w": 1778,
+  "h": 939,
+  "ar": 1.89,
+  "mean": 153,
+  "border": 176,
+  "name": "Tempura Shrimps",
+  "uses": 1
+ },
+ {
+  "id": "p04",
+  "w": 3476,
+  "h": 1629,
+  "ar": 2.13,
+  "mean": 121,
+  "border": 151,
+  "name": "Honey Garlic Wings (6 pieces)",
+  "uses": 1
+ },
+ {
+  "id": "p05",
+  "w": 3225,
+  "h": 2150,
+  "ar": 1.5,
+  "mean": 100,
+  "border": 119,
+  "name": "Honey Garlic Chicken Bites",
+  "uses": 1
+ },
+ {
+  "id": "p06",
+  "w": 3230,
+  "h": 2133,
+  "ar": 1.51,
+  "mean": 131,
+  "border": 129,
+  "name": "Fried Fish",
+  "uses": 1
+ },
+ {
+  "id": "p07",
+  "w": 3499,
+  "h": 1783,
+  "ar": 1.96,
+  "mean": 177,
+  "border": 206,
+  "name": "Lollipop Chicken (4 pieces)",
+  "uses": 1
+ },
+ {
+  "id": "p08",
+  "w": 3225,
+  "h": 2150,
+  "ar": 1.5,
+  "mean": 144,
+  "border": 138,
+  "name": "Garlic Shrimps",
+  "uses": 1
+ },
+ {
+  "id": "p09",
+  "w": 3225,
+  "h": 2150,
+  "ar": 1.5,
+  "mean": 168,
+  "border": 184,
+  "name": "French Fries",
+  "uses": 1
+ },
+ {
+  "id": "p10",
+  "w": 2333,
+  "h": 3292,
+  "ar": 0.71,
+  "mean": 167,
+  "border": 161,
+  "name": "Dynamite Shrimps",
+  "uses": 1
+ },
+ {
+  "id": "p11",
+  "w": 2324,
+  "h": 4124,
+  "ar": 0.56,
+  "mean": 126,
+  "border": 122,
+  "name": "Dynamite Chicken",
+  "uses": 1
+ },
+ {
+  "id": "p12",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 134,
+  "border": 128,
+  "name": "Chicken Corn Soup (S)",
+  "uses": 1
+ },
+ {
+  "id": "p13",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 118,
+  "border": 114,
+  "name": "Chef Special Soup (S)",
+  "uses": 1
+ },
+ {
+  "id": "p14",
+  "w": 3576,
+  "h": 3069,
+  "ar": 1.17,
+  "mean": 128,
+  "border": 151,
+  "name": "Chef Special Soup (L)",
+  "uses": 1
+ },
+ {
+  "id": "p15",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 179,
+  "border": 204,
+  "name": "Sesame Shrimps (L)",
+  "uses": 1
+ },
+ {
+  "id": "p16",
+  "w": 2321,
+  "h": 1530,
+  "ar": 1.52,
+  "mean": 98,
+  "border": 115,
+  "name": "Sweet and Sour Chicken (L)",
+  "uses": 1
+ },
+ {
+  "id": "p17",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 124,
+  "border": 151,
+  "name": "Sweet and Sour Shrimps (L)",
+  "uses": 1
+ },
+ {
+  "id": "p18",
+  "w": 2313,
+  "h": 1258,
+  "ar": 1.84,
+  "mean": 72,
+  "border": 77,
+  "name": "Sesame Chicken (L)",
+  "uses": 1
+ },
+ {
+  "id": "p19",
+  "w": 1778,
+  "h": 1572,
+  "ar": 1.13,
+  "mean": 102,
+  "border": 133,
+  "name": "Mongolian Beef (L)",
+  "uses": 1
+ },
+ {
+  "id": "p20",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 125,
+  "border": 161,
+  "name": "Mongolian Chicken (L)",
+  "uses": 1
+ },
+ {
+  "id": "p21",
+  "w": 1500,
+  "h": 1000,
+  "ar": 1.5,
+  "mean": 131,
+  "border": 162,
+  "name": "Kung Pao Chicken (L)",
+  "uses": 2
+ },
+ {
+  "id": "p22",
+  "w": 2272,
+  "h": 1356,
+  "ar": 1.68,
+  "mean": 79,
+  "border": 93,
+  "name": "Korean Chicken (L)",
+  "uses": 2
+ },
+ {
+  "id": "p23",
+  "w": 3109,
+  "h": 2497,
+  "ar": 1.25,
+  "mean": 123,
+  "border": 121,
+  "name": "Heavenly White Sauce Fish (L)",
+  "uses": 1
+ },
+ {
+  "id": "p24",
+  "w": 2173,
+  "h": 1851,
+  "ar": 1.17,
+  "mean": 89,
+  "border": 117,
+  "name": "Chili Chicken (L)",
+  "uses": 1
+ },
+ {
+  "id": "p25",
+  "w": 2151,
+  "h": 1863,
+  "ar": 1.15,
+  "mean": 98,
+  "border": 128,
+  "name": "Chili Beef (L)",
+  "uses": 1
+ },
+ {
+  "id": "p26",
+  "w": 2674,
+  "h": 2196,
+  "ar": 1.22,
+  "mean": 105,
+  "border": 128,
+  "name": "Chicken Shashlik (L)",
+  "uses": 1
+ },
+ {
+  "id": "p27",
+  "w": 1803,
+  "h": 1854,
+  "ar": 0.97,
+  "mean": 104,
+  "border": 130,
+  "name": "Chicken Manchurian (L)",
+  "uses": 1
+ },
+ {
+  "id": "p28",
+  "w": 2819,
+  "h": 1449,
+  "ar": 1.95,
+  "mean": 92,
+  "border": 83,
+  "name": "Sweet & Sour Shrimps (S)",
+  "uses": 1
+ },
+ {
+  "id": "p29",
+  "w": 3911,
+  "h": 1910,
+  "ar": 2.05,
+  "mean": 85,
+  "border": 72,
+  "name": "Sweet & Sour Chicken (S)",
+  "uses": 1
+ },
+ {
+  "id": "p30",
+  "w": 4090,
+  "h": 2279,
+  "ar": 1.79,
+  "mean": 125,
+  "border": 132,
+  "name": "Chicken Shashlik (S)",
+  "uses": 1
+ },
+ {
+  "id": "p31",
+  "w": 4454,
+  "h": 2287,
+  "ar": 1.95,
+  "mean": 101,
+  "border": 72,
+  "name": "Sesame Shrimps (S)",
+  "uses": 1
+ },
+ {
+  "id": "p32",
+  "w": 2592,
+  "h": 1367,
+  "ar": 1.9,
+  "mean": 93,
+  "border": 82,
+  "name": "Sesame Chicken (S)",
+  "uses": 1
+ },
+ {
+  "id": "p33",
+  "w": 4194,
+  "h": 1822,
+  "ar": 2.3,
+  "mean": 94,
+  "border": 78,
+  "name": "Mongolian Chicken (S)",
+  "uses": 1
+ },
+ {
+  "id": "p34",
+  "w": 4454,
+  "h": 2398,
+  "ar": 1.86,
+  "mean": 101,
+  "border": 85,
+  "name": "Mongolian Beef (S)",
+  "uses": 1
+ },
+ {
+  "id": "p35",
+  "w": 2650,
+  "h": 1460,
+  "ar": 1.82,
+  "mean": 123,
+  "border": 140,
+  "name": "Chicken Manchurian (S)",
+  "uses": 1
+ },
+ {
+  "id": "p36",
+  "w": 2972,
+  "h": 1399,
+  "ar": 2.12,
+  "mean": 140,
+  "border": 154,
+  "name": "Kung Pao Chicken (S)",
+  "uses": 1
+ },
+ {
+  "id": "p37",
+  "w": 3972,
+  "h": 2104,
+  "ar": 1.89,
+  "mean": 101,
+  "border": 108,
+  "name": "Kung Pao Beef (S)",
+  "uses": 1
+ },
+ {
+  "id": "p38",
+  "w": 3102,
+  "h": 1548,
+  "ar": 2,
+  "mean": 149,
+  "border": 143,
+  "name": "Heavenly White Sauce Fish (S)",
+  "uses": 1
+ },
+ {
+  "id": "p39",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 100,
+  "border": 94,
+  "name": "Korean Chicken (S)",
+  "uses": 1
+ },
+ {
+  "id": "p40",
+  "w": 4608,
+  "h": 2106,
+  "ar": 2.19,
+  "mean": 97,
+  "border": 86,
+  "name": "General Tao Chicken (S)",
+  "uses": 1
+ },
+ {
+  "id": "p41",
+  "w": 4454,
+  "h": 2264,
+  "ar": 1.97,
+  "mean": 70,
+  "border": 49,
+  "name": "Chili Chicken (S)",
+  "uses": 1
+ },
+ {
+  "id": "p42",
+  "w": 3653,
+  "h": 2078,
+  "ar": 1.76,
+  "mean": 128,
+  "border": 135,
+  "name": "Chili Beef (S)",
+  "uses": 1
+ },
+ {
+  "id": "p43",
+  "w": 4608,
+  "h": 2319,
+  "ar": 1.99,
+  "mean": 119,
+  "border": 83,
+  "name": "Egg Fried Rice",
+  "uses": 1
+ },
+ {
+  "id": "p44",
+  "w": 2688,
+  "h": 1518,
+  "ar": 1.77,
+  "mean": 124,
+  "border": 84,
+  "name": "White Rice",
+  "uses": 1
+ },
+ {
+  "id": "p45",
+  "w": 4134,
+  "h": 2248,
+  "ar": 1.84,
+  "mean": 121,
+  "border": 103,
+  "name": "Vegetable Rice",
+  "uses": 1
+ },
+ {
+  "id": "p46",
+  "w": 2733,
+  "h": 1586,
+  "ar": 1.72,
+  "mean": 125,
+  "border": 104,
+  "name": "Shrimp Fried Rice",
+  "uses": 1
+ },
+ {
+  "id": "p47",
+  "w": 3464,
+  "h": 1826,
+  "ar": 1.9,
+  "mean": 105,
+  "border": 93,
+  "name": "Chicken Fried Rice",
+  "uses": 1
+ },
+ {
+  "id": "p48",
+  "w": 4270,
+  "h": 1945,
+  "ar": 2.2,
+  "mean": 117,
+  "border": 99,
+  "name": "Chef Rice",
+  "uses": 1
+ },
+ {
+  "id": "p49",
+  "w": 4065,
+  "h": 2201,
+  "ar": 1.85,
+  "mean": 130,
+  "border": 114,
+  "name": "Chef's Special Chow Mein (L)",
+  "uses": 1
+ },
+ {
+  "id": "p50",
+  "w": 3905,
+  "h": 2129,
+  "ar": 1.83,
+  "mean": 153,
+  "border": 142,
+  "name": "Chicken Chow Mein (L)",
+  "uses": 1
+ },
+ {
+  "id": "p51",
+  "w": 4311,
+  "h": 2148,
+  "ar": 2.01,
+  "mean": 139,
+  "border": 142,
+  "name": "Shrimp Chow Mein (L)",
+  "uses": 1
+ },
+ {
+  "id": "p52",
+  "w": 3985,
+  "h": 2255,
+  "ar": 1.77,
+  "mean": 121,
+  "border": 134,
+  "name": "Vegi Chow Mein (L)",
+  "uses": 1
+ },
+ {
+  "id": "p53",
+  "w": 2934,
+  "h": 2716,
+  "ar": 1.08,
+  "mean": 120,
+  "border": 141,
+  "name": "Chef special Chow Mein (S)",
+  "uses": 1
+ },
+ {
+  "id": "p54",
+  "w": 3318,
+  "h": 3009,
+  "ar": 1.1,
+  "mean": 111,
+  "border": 116,
+  "name": "Veggie Chow Mein (S)",
+  "uses": 1
+ },
+ {
+  "id": "p55",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 127,
+  "border": 136,
+  "name": "Shrimp Chow Mein (S)",
+  "uses": 1
+ },
+ {
+  "id": "p56",
+  "w": 3157,
+  "h": 2581,
+  "ar": 1.22,
+  "mean": 122,
+  "border": 135,
+  "name": "Chicken Chow Mein (S)",
+  "uses": 1
+ },
+ {
+  "id": "p57",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 135,
+  "border": 138,
+  "name": "Korean Chicken Burger",
+  "uses": 5
+ },
+ {
+  "id": "p58",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 138,
+  "border": 150,
+  "name": "General Tao Chicken Burger Trio",
+  "uses": 1
+ },
+ {
+  "id": "p59",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 138,
+  "border": 150,
+  "name": "Korean Chicken Burger Trio",
+  "uses": 3
+ },
+ {
+  "id": "p60",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 170,
+  "border": 169,
+  "name": "Crispy Fried Chicken Burger Trio",
+  "uses": 1
+ },
+ {
+  "id": "p61",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 121,
+  "border": 116,
+  "name": "Crispy Fried Chicken Burger",
+  "uses": 1
+ },
+ {
+  "id": "p62",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 138,
+  "border": 150,
+  "name": "Mushroom Beef Burger Trio",
+  "uses": 1
+ },
+ {
+  "id": "p63",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 176,
+  "border": 186,
+  "name": "Beef Cheeseburger Trio",
+  "uses": 1
+ },
+ {
+  "id": "p64",
+  "w": 1695,
+  "h": 1534,
+  "ar": 1.1,
+  "mean": 163,
+  "border": 149,
+  "name": "Beef Cheeseburger Single",
+  "uses": 1
+ },
+ {
+  "id": "p65",
+  "w": 3072,
+  "h": 4608,
+  "ar": 0.67,
+  "mean": 144,
+  "border": 124,
+  "name": "Mango Lassi",
+  "uses": 1
+ },
+ {
+  "id": "p66",
+  "w": 390,
+  "h": 640,
+  "ar": 0.61,
+  "mean": 139,
+  "border": 141,
+  "name": "Green Apple Mocktail",
+  "uses": 1
+ },
+ {
+  "id": "p67",
+  "w": 3072,
+  "h": 4608,
+  "ar": 0.67,
+  "mean": 145,
+  "border": 136,
+  "name": "Watermelon Mocktail",
+  "uses": 2
+ },
+ {
+  "id": "p68",
+  "w": 3072,
+  "h": 4608,
+  "ar": 0.67,
+  "mean": 146,
+  "border": 129,
+  "name": "Mango Mocktail",
+  "uses": 2
+ },
+ {
+  "id": "p69",
+  "w": 3072,
+  "h": 4608,
+  "ar": 0.67,
+  "mean": 131,
+  "border": 132,
+  "name": "Blueberry Mocktail",
+  "uses": 1
+ },
+ {
+  "id": "p70",
+  "w": 3072,
+  "h": 4608,
+  "ar": 0.67,
+  "mean": 141,
+  "border": 134,
+  "name": "Strawberry Mocktail",
+  "uses": 1
+ },
+ {
+  "id": "p71",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 157,
+  "border": 169,
+  "name": "Tiramisu Cake",
+  "uses": 1
+ },
+ {
+  "id": "p72",
+  "w": 3225,
+  "h": 2150,
+  "ar": 1.5,
+  "mean": 162,
+  "border": 164,
+  "name": "Ruby Cheese Cake",
+  "uses": 1
+ },
+ {
+  "id": "p73",
+  "w": 3225,
+  "h": 2150,
+  "ar": 1.5,
+  "mean": 157,
+  "border": 182,
+  "name": "Double Chocolate Cake",
+  "uses": 1
+ },
+ {
+  "id": "p74",
+  "w": 3225,
+  "h": 2150,
+  "ar": 1.5,
+  "mean": 169,
+  "border": 200,
+  "name": "Chocolate Mousse Cake",
+  "uses": 1
+ },
+ {
+  "id": "p75",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 203,
+  "border": 195,
+  "name": "Water",
+  "uses": 1
+ },
+ {
+  "id": "p76",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 159,
+  "border": 153,
+  "name": "Sparkling Water",
+  "uses": 1
+ },
+ {
+  "id": "p77",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 124,
+  "border": 108,
+  "name": "Sprite",
+  "uses": 1
+ },
+ {
+  "id": "p78",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 133,
+  "border": 122,
+  "name": "Red Bull",
+  "uses": 1
+ },
+ {
+  "id": "p79",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 131,
+  "border": 122,
+  "name": "Pepsi",
+  "uses": 1
+ },
+ {
+  "id": "p80",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 133,
+  "border": 119,
+  "name": "Fuze Iced Tea",
+  "uses": 1
+ },
+ {
+  "id": "p81",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 135,
+  "border": 120,
+  "name": "Canada Dry Ginger Ale",
+  "uses": 1
+ },
+ {
+  "id": "p82",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 128,
+  "border": 113,
+  "name": "Crush",
+  "uses": 1
+ },
+ {
+  "id": "p83",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 123,
+  "border": 104,
+  "name": "Diet Coke",
+  "uses": 1
+ },
+ {
+  "id": "p84",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 130,
+  "border": 116,
+  "name": "Coca Cola",
+  "uses": 1
+ },
+ {
+  "id": "p85",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 130,
+  "border": 118,
+  "name": "Coca Cola Zero",
+  "uses": 1
+ },
+ {
+  "id": "p86",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 139,
+  "border": 120,
+  "name": "7UP zero",
+  "uses": 1
+ },
+ {
+  "id": "p87",
+  "w": 2150,
+  "h": 3225,
+  "ar": 0.67,
+  "mean": 146,
+  "border": 131,
+  "name": "7UP",
+  "uses": 1
+ },
+ {
+  "id": "p88",
+  "w": 4608,
+  "h": 3072,
+  "ar": 1.5,
+  "mean": 142,
+  "border": 155,
+  "name": "Tenders With Fries",
+  "uses": 1
+ }
+]

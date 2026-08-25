@@ -182,10 +182,10 @@ picture[data-fill] > img { width: 100%; height: 100%; object-fit: cover; }
 }
 .hdr__lang:hover, .hdr__lang:focus-visible { color: var(--bone); border-color: color-mix(in oklab, var(--bone) 34%, transparent); }
 
-/* .mnav is a child of .hdr, so the header's z-index never competes with the
-   panel's — inside the header's own stacking context the panel (99) paints
-   over an auto-index burger and the menu becomes impossible to close. The
-   burger needs its own index above the panel, and a position for it to apply. */
+/* The panel is a sibling of .hdr at a lower z-index, so the whole header —
+   burger included — already paints above it and stays tappable as the close
+   control. The explicit index is kept as a guard in case the panel is ever
+   moved back inside the header. */
 .hdr__burger {
   display: none; background: none; border: 0; padding: 0.5rem; cursor: pointer;
   position: relative; z-index: 101;

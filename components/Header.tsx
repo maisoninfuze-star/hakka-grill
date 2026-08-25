@@ -62,7 +62,11 @@ export default function Header({ locale }: { locale: Locale }) {
   ];
 
   return (
-    <header className={`hdr ${solid ? 'is-solid' : ''}`}>
+    <>
+    {/* `&& !open`: with the panel open the solid/blurred bar would paint over
+        it as a mismatched band. Transparent lets the logo and X sit directly
+        on the panel. */}
+    <header className={`hdr ${solid && !open ? 'is-solid' : ''}`}>
       <div className="hdr__in">
         <Link href={`/${locale}`} className="hdr__logo" aria-label={`${SITE.name} — ${locale === 'en' ? 'home' : 'accueil'}`}>
           <Wordmark compact={solid} />
@@ -102,10 +106,18 @@ export default function Header({ locale }: { locale: Locale }) {
           </button>
         </div>
       </div>
+    </header>
 
-      {/* Mobile panel. Order/Reserve are repeated at the top so the primary
-          actions are never buried behind a scroll inside the menu. */}
-      <div id="mnav" ref={panelRef} className={`mnav ${open ? 'is-open' : ''}`} hidden={!open}>
+    {/* Deliberately a SIBLING of <header>, not a child.
+        .hdr.is-solid applies backdrop-filter once the page is scrolled, and
+        backdrop-filter (like filter and transform) makes an element the
+        containing block for its position:fixed descendants. As a child, this
+        panel's inset:0 resolved against the ~60px header box the moment you
+        scrolled, collapsing it to a sliver where only the first row showed.
+
+        Order/Reserve are repeated at the top so the primary actions are never
+        buried behind a scroll inside the menu. */}
+    <div id="mnav" ref={panelRef} className={`mnav ${open ? 'is-open' : ''}`} hidden={!open}>
         <div className="mnav__act">
           <a href={SITE.orderUrl} className="btn btn--ember btn--wide" target="_blank" rel="noopener noreferrer">{t.nav.order}</a>
           {/* --outline, not --ghost: in the panel this is a primary conversion
@@ -123,8 +135,8 @@ export default function Header({ locale }: { locale: Locale }) {
         <div className="mnav__foot">
           <Link href={switchHref} className="mnav__lang" hrefLang={other}>{t.lang.switch}</Link>
           <a href={`tel:${SITE.phone}`} className="mnav__tel num">{SITE.phoneDisplay}</a>
-        </div>
       </div>
-    </header>
+    </div>
+    </>
   );
 }
